@@ -1,134 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>域名变更</title>
-    <url>/2021/07/08/%E5%9F%9F%E5%90%8D%E5%8F%98%E6%9B%B4/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="没错，域名又双叕换了！"><a href="#没错，域名又双叕换了！" class="headerlink" title="没错，域名又双叕换了！"></a>没错，域名又双叕换了！</h1><p>本blog正式用上新域名辣~</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://tokiame.cn</span><br></pre></td></tr></table></figure>
-<h1 id="契机"><a href="#契机" class="headerlink" title="契机"></a>契机</h1><p>自从博客名改名时雨小栈以后，思来想去总感觉不对劲啊，unlinus.cn这域名和标题不符！于是就有了换域名的想法。</p>
-<p>光是域名就想了大半天，后来决定使用“时雨”二字的日语罗马音——tokiame作为域名。上万网找了下，发现tokiame.com已经被人注册过了。虽说不打算将.com作为自己的一级域名，但是总感觉二级域tokiame和别人重名了，不爽（就是这么任性）。于是，我在tokiame后面加上了自己英文名的前三位asu，再综合自己的钱包情况（穷），注册了tokiame-asu.top（首年7块钱）。为什么一级域名是.top呢？因为真的不想被人whois查到我的信息（cn域名在阿里云那边搞不了whois隐藏，不知道是不是我的问题）</p>
-<p>今年年初开始，我的博客一直托管在Github Page上，通过阿里云的CDN和OSS图床给博客加速，效果很不错。然而现在想换域名，问题来了，国内CDN都需要域名备案，而我已经接近大半年没用过阿里云的ECS了。因为备案域名需要绑定ECS、云存储网关之类的产品，或者绑定备案授权码（国内云服务商大多数都是这么操作）。直接跑去买ECS或者云产品来备案也不现实，因为云产品需要购买满三个月以上才能进行备案，三个月产生的费用对我来说未免太过昂贵。没办法，只能暂时放弃备案这个想法了。后来我找到一个伙计，白嫖了一台美国主机，把博客放在了上面。因为是国外主机，域名可以直接解析到国外主机的IP而不需要备案。blog.tokiame-asu.top就这样暂时在别处安家了。</p>
-<p>更换域名后，我立马在友链主页上更新了自己的博客信息，并给友链上的伙伴发了更换域名申请。虽说网站域名换好了，但是网站的图床仍在使用unlinus.cn域名。思考片刻，还是决定搞个备案。因为阿里云的产品最近没什么优惠（我也不是新用户了），实在砸不了钱，而且tokiame-asu.top这域名，在阿里云注册未满60天又不能转出，在阿里云备案是行不通了。于是转战腾讯云，找到了云+校园（n年前买过云+校园，但是买了3次，每次都没及时续费，资格已经无了o(╥﹏╥)o）。新版套餐是25岁以下免学生认证，三个月27块钱，一年也才108，果断买（然后就只买了3个月，我是不是傻子）。</p>
-<p><img src="https://buff.tokiame.cn/hexo-images/202109082136194.png" alt="image-20210908213653119"></p>
-<p>云主机有了，但是域名还在阿里云，还要等一个多月才能转出域名（心急呗，老毛病了）。于是又买买买，注册了tokiame.cn域名（这次连-asu都不要了，重名就重名，大不了来跟我抢注tokiame二级域名呗，诶就是玩~）。为什么一级域名又换.cn呢？因为看上了腾讯云的隐私保护，可以隐藏Whois。</p>
-<p>像以往一样，我提交了备案申请，看起来一切顺利。隔天，腾讯云打电话过来，要求之前备案的域名需要能访问，或者完全注销，才能提交新备案。然后我选了后者，一顿骚操作把unlinus.cn的备案给扬了（注销了网站，但没注销网站主体）。在工信部备案系统还能查到我的域名备案号，但是因为空壳主体的原因，需要提交主体注销申请或等工信部备案系统把我的主体信息删掉，才能进行新备案。又查了下网站主体注销申请的流程，要打印、填表、还要邮寄到省管局……我直接好家伙……</p>
-<p>过了一天多，我在工信部备案系统又查了下原域名的备案号，发现已经查无此人（这么快，这不比申请注销主体更得劲么……）</p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2021-09-08-21-33-52.png" alt="2021-09-08-21-33-52"></p>
-<h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>今天工信部发消息告知，备案申请申请已经通过，接下来又是漫长的迁移过程（幸亏已经提前准备好迁移了）……</p>
-<p>这篇文章也算是个踩坑记录吧，希望能帮到大家。</p>
-<p>最后给大伙道个歉！换了好多次域名，网站还挂了好一段时间，I’m so sorry ~</p>
+    <title>ESXi6.7一些罕见问题的解决方法</title>
+    <url>/2020/04/27/ESXi%E4%B8%80%E4%BA%9B%E7%BD%95%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>一大早睡得正香，突然被一通电话叫醒了（内心<del>万马奔腾</del>一万个不情愿）。“…昨晚停了一次电，服务器全都连不上了，网络有问题，过来帮忙看一下”。点开微信群一看，瞬间不淡定了：“工程师反映，系统远程不了了，网站也打不开”，“停电了，昨晚半夜供电局高压跳闸，我们的电池没能坚持下去”。这不意味着整个机房瞬间失去电力供应了？！</p>
+<p>我连滚带爬坐到了电脑椅上，打开电脑，还能连接到机房VPN，说明出口网络还是通的。几经排查，原来是因为刀片服务器的交换机忘记保存配置，断电重启后部分配置失效了（一记耳光）。</p>
+<h1 id="第一个问题：VCSA无法访问"><a href="#第一个问题：VCSA无法访问" class="headerlink" title="第一个问题：VCSA无法访问"></a>第一个问题：VCSA无法访问</h1><h2 id="异常表现"><a href="#异常表现" class="headerlink" title="异常表现"></a>异常表现</h2><p>排查过程中发现，VCSA访问不了了，提示<strong>503 Service Unavailable(Failed to connect to endpoint…）</strong>。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>第一反应告诉我，可能是VCSA的核心服务没能启动。按照网上大神的说法，需要SSH登录到VCSA，用命令行来启动核心服务。但是问题来了，这VCSA默认没打开SSH服务啊，还能怎么搞？<br>其实VCSA还有个设备管理功能（用于进行VCSA底层组件管理），可以通过浏览器访问<code>https://&lt;VCSA IP&gt;:5480：</code>进入：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-20-11.png" alt="2020-04-29-23-20-11"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-23-46.png" alt="2020-04-29-23-23-46"></p>
+<p>果不其然，VCSA的好几个核心服务都没有启动。按照下图说明来启动相关服务，然后看看VCSA是不是能访问了？：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-30-14.png" alt="2020-04-29-23-30-14"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-32-31.png" alt="2020-04-29-23-32-31"></p>
+<h1 id="第二个问题：无法操作虚拟机"><a href="#第二个问题：无法操作虚拟机" class="headerlink" title="第二个问题：无法操作虚拟机"></a>第二个问题：无法操作虚拟机</h1><h2 id="异常表现-1"><a href="#异常表现-1" class="headerlink" title="异常表现"></a>异常表现</h2><p>一切尽在不言中：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-35-50.png" alt="2020-04-29-23-35-50"></p>
+<p>还有无脑弹出的消息：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-37-05.png" alt="2020-04-29-23-37-05"></p>
+<h2 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法"></a>解决方法</h2><p>同第一个问题一样，也是因VCSA服务异常造成的。把相关服务启动或者重新启动一遍就可以了。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>通常遇到以上问题时，重点关注这个几个服务的状态，如果处于异常或停止状态，只需把对应服务启动或重启就OK了：</p>
+<ul>
+<li>VMware vService Manager</li>
+<li>VMware vSphere Update Manager</li>
+<li>VMware PSC Health</li>
+<li>VMware vSphere Client</li>
+<li>VMware vSphere Web Client</li>
+<li>VMware vCenter Server</li>
+<li>VMware vCenter-Services</li>
+</ul>
+<p>数据无价，双手合十，祈祷永不宕机，永不断电。</p>
 ]]></content>
+      <categories>
+        <category>搬砖随记</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+        <tag>vSphere</tag>
+        <tag>故障</tag>
+        <tag>运维</tag>
+      </tags>
   </entry>
   <entry>
-    <title>年度水文：解决了访问博客出现的403问题</title>
-    <url>/2022/07/02/%E5%B9%B4%E5%BA%A6%E6%B0%B4%E6%96%87%EF%BC%9A%E8%A7%A3%E5%86%B3%E4%BA%86%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2%E5%87%BA%E7%8E%B0%E7%9A%84403%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
-<p>Long time no see<br>伙计们，我回来了</p>
-</blockquote>
-<h1 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h1><p>去年Coding Pages下线后，我把博客托管在了云开发CloudBase上（有一说一，还挺方便的，连CDN配置都省了）。</p>
-<p>部署完成后，发现部分博客文章打不开了，报403错误：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-17-41-03.png" alt="2022-07-02-17-41-03"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-17-42-20.png" alt="2022-07-02-17-42-20"></p>
-<p>然鹅很奇怪的是，早前博客部署在Github Pages、Coding Pages的时候，是没有这个问题的。在本地测试，也能正常打开：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-17-48-36.png" alt="2022-07-02-17-48-36"></p>
-<h1 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h1><p>只能怀疑是环境的问题了，毕竟在本地都能正常打开。</p>
+    <title>Hexo折腾手记</title>
+    <url>/2020/04/24/Hexo%E6%8A%98%E8%85%BE%E6%89%8B%E8%AE%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="写在最前面…"><a href="#写在最前面…" class="headerlink" title="写在最前面…"></a>写在最前面…</h1><p>Hexo是基于node.js构建的一套静态博客平台，安装部署过程都比较简单，稍微懂一点点html和Markdown语法就能搞定（这也是笔者由WP转向Hexo的一个初衷…）<br>话不多说，立马开搞！</p>
+<h2 id="步骤记录（笔者用的是Windows）"><a href="#步骤记录（笔者用的是Windows）" class="headerlink" title="步骤记录（笔者用的是Windows）"></a>步骤记录（笔者用的是Windows）</h2><h2 id="开始之前…"><a href="#开始之前…" class="headerlink" title="开始之前…"></a>开始之前…</h2><p>万事开头难（特别是对于我这种对编程一窍不通的菜鸡儿&#x3D; &#x3D;）。要让Hexo跑起来，首先要满足一些条件：</p>
 <ol>
-<li>检查问题文章中的图片链接，复制到浏览器后能正常打开，排除了图床的访问权限问题</li>
-<li>将问题文章和其他正常文章对比后发现，问题文章的源文件名、文章标题中都包含有“+”符号，会不会是这个造成的呢？</li>
+<li>一台Windows或Linux主机；</li>
+<li>主机内部署好node.js环境；</li>
+<li>安装好Git（用于将hexo项目pull到本地，玩码云或者Gayhub的同志必备）；</li>
+<li>最基本的！必须懂得npm的简单使用！必须得会一点Markdown语法（除非你拿这玩意当记事本来写）；</li>
+<li>准备好编辑器（sublime，atom，vscode，typora等等）。<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2>下载地址：<a href="http://npm.taobao.org/mirrors/git-for-windows/" title="http://npm.taobao.org/mirrors/git-for-windows/">http://npm.taobao.org/mirrors/git-for-windows/</a>。我下的是最新版：<br><img src="https://buff.tokiame.cn/hexo-images/npm.png" alt="20200425192102"></li>
 </ol>
-<p>先从源文件名下手，将源文件重命名了一下，把“+”替换为“、”：</p>
-<ul>
-<li><p>更改前：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-18-00-20.png" alt="2022-07-02-18-00-20"></p>
-</li>
-<li><p>更改后：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-18-01-33.png" alt="2022-07-02-18-01-33"></p>
-</li>
-</ul>
-<p>随后将博客部署到CloudBase，小等1分钟后刷新，再次访问这篇文章，发现可以正常访问了：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-18-09-12.png" alt="2022-07-02-18-09-12"></p>
-<p>另一篇文章也采用相同方法进行操作。最后，问题全部解决。</p>
+<p>下载完成后，运行安装（保持默认配置,一直Next即可）。</p>
+<h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>上<a href="https://nodejs.org/en/">node.js官网</a>下载适合自己系统版本的node.js运行环境安装包（建议用IDM、迅雷之类的工具来下载，这样比较快）。下载完成后，运行安装即可（没什么需要的话，保留默认配置安装就可以了）：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-20-34-19.png" alt="2020-04-26-20-34-19"></p>
+<p>安装完成后,执行以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">node -v      /*查看当前安装的node.js版本*/</span><br><span class="line">v12.16.1</span><br><span class="line">npm -v      /*查看当前安装的node.js软件包管理器版本*/</span><br><span class="line">v6.13.4</span><br><span class="line">npm config set registry http://registry.npm.taobao.org/   /*更换npm安装源为国内源（这里用淘宝的）*/</span><br><span class="line">npm update      /*刷新npm源*/</span><br></pre></td></tr></table></figure>
+<h2 id="开始部署Hexo"><a href="#开始部署Hexo" class="headerlink" title="开始部署Hexo"></a>开始部署Hexo</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g      /*使用npm安装Hexo*/</span><br><span class="line">cd /d D:\Project\hexo        /*进入你要部署Hexo的目标文件夹*/</span><br><span class="line">hexo init      /*部署Hexo*/</span><br></pre></td></tr></table></figure>
+<p>Tips：Hexo init时，需要将github上的Hexo项目pull下来，速度会比较慢，除非你有喝酸酸乳（&#x2F;手动滑稽）。初次部署完成后，执行以下命令进行初始化：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean     /*清除缓存*/</span><br><span class="line">hexo g         /*生成静态页面*/</span><br><span class="line">hexo s         /*开始跑Hexo*/</span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器，输入<code>IP地址:4000</code>(本地的话是 <code>localhost:4000</code> 或 <code>127.0.0.1:4000</code>),就可以看到效果了，是不是很简单！<br><img src="https://buff.tokiame.cn/hexo-images/example.png" alt="20200425192452"></p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>如果你没有公网服务器和域名，也可以将你的Hexo丢到Gayhub、码云或者coding之类的代码托管平台上，直接用你的gayhub域名就能访问了！具体步骤可以参考以下链接的内容：</p>
+<ol>
+<li><a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE" title="https://git-scm.com/book/zh/v2/起步-初次运行-Git-前的配置">初次运行Git前的配置</a></li>
+<li><a href="https://www.jianshu.com/p/e70b4ca63115" title="https://www.jianshu.com/p/e70b4ca63115">hexo博客部署到github</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>Hexo</category>
+        <category>瞎折腾</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>欢迎新成员——红米AX5使用感受</title>
-    <url>/2021/07/07/%E6%AC%A2%E8%BF%8E%E6%96%B0%E6%88%90%E5%91%98%E2%80%94%E2%80%94%E7%BA%A2%E7%B1%B3AX5%E4%BD%BF%E7%94%A8%E6%84%9F%E5%8F%97/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>家里的无线路由器是TP-Link的WDR6500千兆版，2018年初升级电信宽带买的（当时还是小白，在电信营业厅200多买的，巨坑！网上随便100多就能搞到 &#x3D; &#x3D;），到目前为止服役了3年多。最近实在是受不了了，要么信号不稳定，要么隔一堵墙就从5GHz掉到2.4GHz。还有相当麻烦的一点就是，距离WiFi太远时不能切换到2.4GHz，或者离WiFi近时不能自动切换回5Ghz。我也尝试过改变路由器的摆放位置，也设置过定时重启，无果。那么办法只有一个了——买买买！</p>
-<h1 id="采购！"><a href="#采购！" class="headerlink" title="采购！"></a>采购！</h1><p>在买之前，首先考虑一下需求。由于家里宽带是电信的200M下行，百兆接口的产品显然会成为瓶颈，考虑到将来带宽升级的空间，千兆速率肯定是首选。另外一个要考虑的是无线的速率，早些年的Wifi5无线路由器，主流速率多数是2.4GHz 300M+5GHz 867M。其实这个速率放在我家的话，使用设备不多，重度使用的情况相对比较少，其实也基本够用。</p>
-<p>讲真，无线信号的稳定性才是需要考虑的重点。因为对于对于家里的房屋构造来说，普通的路由器显然有点力不从心了：</p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-21-55-49.png" alt="2021-07-07-21-55-49"><br>（内心OS：0.3米厚的墙，大量的柱子，辣鸡路由器，糟糕的摆放位置，简直绝配&#x3D; &#x3D;）</p>
-<p>去B站看了一圈<a href="https://www.bilibili.com/video/BV1aA411v7jL?from=search&seid=8961385878318621997">大米评测</a>，又去科普了一番，考虑家里的WiFi使用情况和我的钱包（哭了），决定搞2台红米AX5，采用Mesh组网。</p>
-<h1 id="开箱！"><a href="#开箱！" class="headerlink" title="开箱！"></a>开箱！</h1><p>一口气买了两台：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-12-48.jpg" alt="2021-07-07-22-12-48"></p>
-<p>包装还是挺不错的：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-13-57.jpg" alt="2021-07-07-22-13-57"></p>
-<p>机身是白色的，顶面只有系统和网络指示灯。路由器上下两面全部镂空，散热简单粗暴。<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-26-56.jpg" alt="2021-07-07-22-26-56"><br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-23-36.png" alt="2021-07-07-22-23-36"></p>
-<p>背面是1个电源插口、4个千兆网口（1个WAN+3个LAN）和1个重置按钮，平平无奇。<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-25-47.jpg" alt="2021-07-07-22-25-47"></p>
-<h1 id="实测！"><a href="#实测！" class="headerlink" title="实测！"></a>实测！</h1><h2 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h2><p>将两台AX5放在一起，将其中一台AX5（右边那台）的WAN口和旧路由器的LAN口连接，进行联网：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-34-00.jpg" alt="2021-07-07-22-34-00"></p>
-<p>稍等片刻以后，用手机连接已经联网的AX5：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-37-52.png" alt="2021-07-07-22-37-52"></p>
-<p>手机打开MiWifi，绑定路由器 进行设置：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-38-17.png" alt="2021-07-07-22-38-17"></p>
-<p>点下一步。因为开头已经将AX5和旧的路由器连接好了，这里设置有限中继模式即可（该模式将路由器的WAN口作为LAN口使用）：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-42-52.png" alt="2021-07-07-22-42-52"></p>
-<p>设置WiFi的SSID，然后重新连接WiFi：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-43-40.png" alt="2021-07-07-22-43-40"></p>
-<h2 id="Mesh组网（无线回程方式）"><a href="#Mesh组网（无线回程方式）" class="headerlink" title="Mesh组网（无线回程方式）"></a>Mesh组网（无线回程方式）</h2><p>在MiWifi中点“设备”→“Mesh网络设备”→“添加”，将另一台AX5作为子Mesh节点加入组网：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-46-14.png" alt="2021-07-07-22-46-14"><br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-47-00.png" alt="2021-07-07-22-47-00"></p>
-<p>扩展Mesh网络大概需要1-2分钟。扩展完成以后，两台AX5将会使用相同的SSID。<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-49-24.png" alt="2021-07-07-22-49-24"></p>
-<p>Mesh组网完成以后，将两台AX5分别放置在客厅和厨房，准备进行测试。</p>
-<h2 id="简单测试"><a href="#简单测试" class="headerlink" title="简单测试"></a>简单测试</h2><p>附上房屋平面图：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-58-13.png" alt="2021-07-07-22-58-13"></p>
-<p>手机端测试软件用的是WiFi魔盒。先来看看2.4Ghz和5Ghz的信道情况：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-55-46.png" alt="2021-07-07-22-55-46"><br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-55-59.png" alt="2021-07-07-22-55-59"></p>
-<p>拿着手机在各个房间区域走动，进行简单的漫游测试。其中，在从卧室到厨房走动的过程中，WiFi魔盒并未感知到WiFi漫游，但是从传输速率和延迟的变化，基本可以判定走动过程中确实发生了一次漫游：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-23-06-50.png" alt="2021-07-07-23-06-50"><br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-23-07-42.png" alt="2021-07-07-23-07-42"></p>
-<p>最后在全屋各个区域测试一下网速：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-23-09-25.png" alt="2021-07-07-23-09-25"></p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>测试结果还是挺不错的，WiFi漫游过程中基本能实现用户无感知。此外，虽然是采用无限回程的Mesh组网方式，但是终端的网速几乎不受影响，而且终端能够全程保持5GHz连接。后来又进行了一次测试，取消厨房的子Mesh节点，意外地发现网速依然能够保持在下行200M上行30M的水平，5GHz信号强度也比较高，估计得益于自带的独立信号放大器。这样看来，一个AX5也足够全屋5GHz覆盖了。从性价比角度来考虑的话，我觉得红米AX5是一个不错的选择。</p>
-<h1 id="番外：Mesh组网和传统WDS无线桥接的区别？"><a href="#番外：Mesh组网和传统WDS无线桥接的区别？" class="headerlink" title="番外：Mesh组网和传统WDS无线桥接的区别？"></a>番外：Mesh组网和传统WDS无线桥接的区别？</h1><p>先说说漫游的概念。“在无线网络覆盖的范围里，用户有可能在移动中。但由于单个AP（无线访问接入点）设备的信号覆盖范围都是有限的，用户在移动过程中，往往会出现从一个AP覆盖范围跨越到另一个AP覆盖范围的情况。为了避免移动用户在不同的AP之间切换时，造成网络通讯中断的情况，这里就用到了无线漫游的技术。——摘自<a href="https://baike.baidu.com/item/%E6%97%A0%E7%BA%BF%E6%BC%AB%E6%B8%B8/981630?fr=aladdin">百度百科</a>”</p>
-<p>传统路由器的WDS无线桥接使用一台或多台无线路由器和主路由进行桥接，对主路由的无线网络进行拓展（即中继），提升无线的覆盖范围。然而，手机、笔记本等无线终端并不能根据自身的无线质量来决定连接哪一个接入点。</p>
-<p>Mesh组网与WDS无线桥接类似，但是它支持802.11 k&#x2F;v&#x2F;r协议。k用于收集终端的网络质量等信息，决定终端是否进行漫游，v用于请求终端进行无线漫游，r用于缩短无线漫游时间。有了802.11k&#x2F;v&#x2F;r，终端就能在不同的接入点之间，切换到网络质量更佳的接入点，而且全程不需要手动操作，提升用户体验。</p>
-<p>举个栗子，假设AB两台路由器采用WDS无线桥接的话，张三手机连上了A路由，但是当张三离A路由越来越远、离B路由越来越近的时候，他的手机仍然连着A路由，但WiFi已经只有1格信号了，手机死活不肯连接B路由。他只能重新打开Wifi，才能连上B路由（就算两台路由器使用相同SSID也无济于事）。而AB两台路由器使用Mesh组网的话，张三手机连上了A路由，当张三离A路由越来越远、离B路由越来越近的时候，通过802.11k&#x2F;v&#x2F;r协议，张三手机将会快速从A路由切换到B路由，无需手动操作。</p>
-<p>为了让平民百姓也能看得懂，这里使用了比较口语化的方式来进行说明，勿抬杠谢谢~</p>
-]]></content>
-      <categories>
-        <category>瞎折腾</category>
-      </categories>
-      <tags>
-        <tag>路由器</tag>
-        <tag>mesh</tag>
-        <tag>网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Diskpart优雅地管理你的磁盘分区</title>
-    <url>/2021/05/27/%E4%BD%BF%E7%94%A8Diskpart%E4%BC%98%E9%9B%85%E5%9C%B0%E7%AE%A1%E7%90%86%E4%BD%A0%E7%9A%84%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><del>强迫症（OCD）属于焦虑障碍的一种类型，是一组以强迫思维和强迫行为为主要临床表现的神经精神疾病，其特点为有意识的强迫和反强迫并存，一些毫无意义、甚至违背自己意愿的想法或冲动反反复复侵入患者的日常生活。患者虽体验到这些想法或冲动是来源于自身，极力抵抗，但始终无法控制，二者强烈的冲突使其感到巨大的焦虑和痛苦，影响学习工作、人际交往甚至生活起居。</del><br>我们每次在虚拟机上安装Windows，设置Windows安装位置的时候，都会提示“Windows可能要为系统文件创建额外的分区”。这样安装的话会默认创建EFI（存放EFI引导文件）、MSR（保留分区）和主分区，强迫症表示非常不爽。撇开强迫症不说，如果需要扩展磁盘空间，有个MSR分区卡在中间的话，根本没法进行在线扩容，需要进入Windows PE利用分区软件来进行扩容，带来极大的不便。我们可以利用Windows安装镜像自带的Diskpart工具，亲手进行磁盘分区。</p>
-<h1 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h1><h2 id="环境介绍"><a href="#环境介绍" class="headerlink" title="环境介绍"></a>环境介绍</h2><ul>
-<li>系统镜像文件：Windows Server 2019镜像文件</li>
-<li>虚拟化平台：VMware vSphere 7.0u2</li>
-<li>一台能上网的破笔记本</li>
-<li>一位懂电脑并且会用vSphere的靓仔or靓女&#x2F;滑稽</li>
-</ul>
-<h2 id="安装伊始"><a href="#安装伊始" class="headerlink" title="安装伊始"></a>安装伊始</h2><p>照常创建虚拟机，挂载Windows安装镜像，一路来到Windows安装界面：<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-18-16-22.png" alt="2021-05-27-18-16-22"></p>
-<p>点击下一步→修复计算机：<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-00-45.png" alt="2021-05-27-19-00-45"></p>
-<p>依次点击疑难解答→命令提示符，进入命令行界面。没错，就是喜闻乐见的cmd：<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-01-49.png" alt="2021-05-27-19-01-49"><br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-01-59.png" alt="2021-05-27-19-01-59"></p>
-<p>输入diskpart运行磁盘管理工具。<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-04-10.png" alt="2021-05-27-19-04-10"></p>
-<p>diskpart提供了比较丰富的磁盘管理功能，可以实现磁盘的初始化、分区新建、格式化、删除等功能。如果不熟悉diskpart，可以输入<code>help</code>显示帮助信息。</p>
-<p>如图，使用<code>list disk</code>列出所有磁盘，然后根据返回的信息，输入<code>select disk 0</code>选中需要操作的磁盘:<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-08-31.png" alt="2021-05-27-19-08-31"></p>
-<p>由于采用UEFI引导方式，故需要将磁盘初始化为GPT格式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DISKPART&gt;convert gpt</span><br><span class="line">DiskPart 已将所选磁盘成功地转换为 GPT 格式。</span><br></pre></td></tr></table></figure>
-
-<p>创建一个大小为512MB的EFI分区：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DISKPART&gt;create partition efi size=512</span><br><span class="line">DiskPart 成功地创建了指定分区。</span><br></pre></td></tr></table></figure>
-
-<p>再创建一个主分区，用于安装操作系统（如果不指定分区大小，将会使用所有剩余空间来创建分区）：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DISKPART&gt;create partition primary</span><br><span class="line">DiskPart 成功地创建了指定分区。</span><br></pre></td></tr></table></figure>
-
-<p>输入<code>list partition</code>，列出所有分区，确保无误：<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-18-41.png" alt="2021-05-27-19-18-41"></p>
-<p>输入<code>exit</code>退出Diskpart，然后输入<code>setup.exe</code>，重新进入安装程序。</p>
-<h2 id="后续步骤"><a href="#后续步骤" class="headerlink" title="后续步骤"></a>后续步骤</h2><p>像往常一样正常安装Windows即可。<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-22-18.png" alt="2021-05-27-19-22-18"></p>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://baike.baidu.com/item/diskpart/2340530?fr=aladdin#6">https://baike.baidu.com/item/diskpart/2340530?fr=aladdin#6</a><br><a href="https://www.jianshu.com/p/8d63abf6a2b1">https://www.jianshu.com/p/8d63abf6a2b1</a></p>
-]]></content>
-      <categories>
-        <category>瞎折腾</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-        <tag>运维</tag>
-        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -156,297 +96,32 @@
       </tags>
   </entry>
   <entry>
-    <title>P5-存储虚拟化</title>
-    <url>/2020/08/17/P5-%E5%AD%98%E5%82%A8%E8%99%9A%E6%8B%9F%E5%8C%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>说到存储，可能大多数人首先想到的是硬盘、U盘，然而这些都只是冰山一角。在虚拟化领域，存储是以什么样的形式存在的呢？</p>
-<h1 id="存储介质：硬盘"><a href="#存储介质：硬盘" class="headerlink" title="存储介质：硬盘"></a>存储介质：硬盘</h1><p>存储介质种类繁多。在虚拟化领域，硬盘的使用非常广泛，下面会重点介绍硬盘的分类。</p>
-<h2 id="根据接口进行划分"><a href="#根据接口进行划分" class="headerlink" title="根据接口进行划分"></a>根据接口进行划分</h2><ol>
-<li><p><strong>IDE硬盘：</strong>也称为并口硬盘、ATA硬盘，采用并行传输模式。然而线缆数量过多，难以实现高速率。理论上，提高工作频率可以使传输速率更高，但由于线缆数量多，提高工作频率会导致线路间产生串扰，传输距离变短。目前，这种硬盘已经不再生产，面临淘汰。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-06-00.png" alt="2020-08-23-21-06-00"></p>
-</li>
-<li><p><strong>SATA硬盘：</strong>也称为串口硬盘，采用串行传输方式，线缆数量少，容易达到较高的传输速率，且传输距离长。SATA硬盘采用了嵌入式时钟信号，能够同时对数据、传输指令进行检查，纠错能力强，可靠性高。SATA硬盘还支持热插拔，维护较为方便。目前，在消费级硬盘领域，SATA硬盘的使用非常广泛。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-06-20.png" alt="2020-08-23-21-06-20"></p>
-</li>
-<li><p><strong>SAS硬盘：</strong>即串行SCSI硬盘，采用SAS接口。SAS接口是向下兼容SATA接口的，但是和SATA接口不一样的是，它支持串行SCSI协议（SSP）、SCSI管理协议（SSP），且额外提供了冗余传输端口（位于供电接口和数据接口之间的补平部分），可以连接到备用的SAS控制器上，可靠性更高。目前还有一种采用SAS接口、SATA盘体的NL-SAS硬盘，转速较低，但价格比SAS硬盘稍低。SAS硬盘被广泛应用于高可靠性要求的领域，例如服务器。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-07-48.png" alt="2020-08-23-21-07-48"></p>
-</li>
-</ol>
-<h2 id="根据存储构造进行划分"><a href="#根据存储构造进行划分" class="headerlink" title="根据存储构造进行划分"></a>根据存储构造进行划分</h2><ol>
-<li><p><strong>HDD：</strong>Hard Disk Driver，即硬盘驱动器，存储单元采用的是机械结构（磁头+磁盘），通过电磁流改变磁盘极性，将数据写到磁盘上，读取数据时采用相反方式。自1973年IBM发明了硬盘以来，机械硬盘的核心结构部分始终没有脱离“温彻斯特”模式：在密封、固定并高速旋转的镀磁盘片的每个盘片上，磁头通过沿盘片径向移动进行数据读写操作。这种磁盘容易实现大容量，且价格较为低廉。缺点是读写速率较低，容易受到外力损坏，且功耗较大。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-20-54-30.png" alt="2020-08-23-20-54-30"></p>
-</li>
-<li><p><strong>SSD：</strong>Solid State Drive，即固态驱动器，存储单元采用的是电子结构（NAND Flash芯片），通过在芯片内部进行电子的充电、感应、擦除实现数据读写。SSD在持续写入、随机读写方面性能非常优秀。这种磁盘质量较轻，且功耗低、发热量小，几乎不存在物理损坏，且读写速率高。缺点是使用寿命有限，相对于机械硬盘，SSD价格更高。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-20-22-03.png" alt="2020-08-23-20-22-03"></p>
-</li>
-</ol>
-<h1 id="常见的三大存储类型"><a href="#常见的三大存储类型" class="headerlink" title="常见的三大存储类型"></a>常见的三大存储类型</h1><h2 id="NAS"><a href="#NAS" class="headerlink" title="NAS"></a>NAS</h2><p><strong>NAS</strong>即Network Attached Storage，网络附加存储，通过网络实现存储空间共享，以文件系统的形式将存储提供给主机使用。NAS为实现共享而生，部署方式简单，扩展性强，且传输距离长。然而其存储性能依赖于存储设备、网络带宽，性能相对较低；<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-01-45.png" alt="2020-08-23-21-01-45"></p>
-<h2 id="DAS"><a href="#DAS" class="headerlink" title="DAS"></a>DAS</h2><p><strong>DAS</strong>即Direct-attached Storage，直连式存储，与主机总线直连，如硬盘、U盘。这种存储的实现方式最简单，性能比NAS更优。缺点是对主机资源消耗较高，扩展性差（取决于主机存储接口数量），且传输距离有限，不利于共享；<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-04-51.png" alt="2020-08-23-21-04-51"></p>
-<h2 id="SAN"><a href="#SAN" class="headerlink" title="SAN"></a>SAN</h2><p><strong>SAN</strong>即Storage Area Network，存储区域网络。主机通过交换机和存储设备连接，建立存储网络，以块的形式将存储提供给主机使用。共享，支持距离长，性能高。缺点是构造比较复杂，造价昂贵，通常部署在企业、单位等对存储要求较高的环境。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-03-15.png" alt="2020-08-23-21-03-15"></p>
-<p>根据传输介质和传输协议的不同，SAN又分为IP SAN和FC SAN，下图是它们两者之间的区别：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-22-22-10-04.png" alt="2020-08-22-22-10-04"></p>
-<h1 id="虚拟化存储基础"><a href="#虚拟化存储基础" class="headerlink" title="虚拟化存储基础"></a>虚拟化存储基础</h1><h2 id="磁盘基本概念"><a href="#磁盘基本概念" class="headerlink" title="磁盘基本概念"></a>磁盘基本概念</h2><p><strong>Pool：</strong>存储池，可以看作一个容器，承载的是存储空间；<br><strong>Volume：</strong>卷，是存储系统的内部管理对象，是对存储系统本身而言的；<br><strong>LUN：</strong>逻辑单元号，可以直接映射给主机使用，是Volume对象的对外体现；</p>
-<h2 id="虚拟磁盘置备模式"><a href="#虚拟磁盘置备模式" class="headerlink" title="虚拟磁盘置备模式"></a>虚拟磁盘置备模式</h2><p><strong>1. 普通延迟置零：</strong>创建虚拟磁盘后分配空间但不置零，在VM需要对磁盘进行I&#x2F;O操作时，对虚拟磁盘进行置零，即边写入边置零。这种磁盘性能适中，空间利用率较高，创建时间比较短，适用于一般业务的虚拟机；<br><strong>2. 普通：</strong>创建虚拟磁盘后分配空间并进行置零。这种虚拟磁盘性能最佳，但创建时间也更长，适用于业务繁重、对磁盘I&#x2F;O要求较高的虚拟机；<br><strong>3. 精简：</strong>在创建虚拟磁盘后，不分配空间也不置零，在VM需要对磁盘进行I&#x2F;O操作时对虚拟磁盘分配空间、写入数据并置零，即边分配空间边写入边置零。这种磁盘创建时间最短，空间利用率也高，但在虚拟机I&#x2F;O操作频繁时性能较差，适用于对I&#x2F;O要求较低的业务虚拟机。</p>
-<h2 id="虚拟磁盘模式"><a href="#虚拟磁盘模式" class="headerlink" title="虚拟磁盘模式"></a>虚拟磁盘模式</h2><p><strong>1. 从属：</strong>快照中包含该从属磁盘。<br><strong>2. 独立-持久：</strong>对数据的更改将立即永久写入磁盘。虚拟机创建快照时，不会对该磁盘的数据进行快照，因而不受快照影响。使用快照还原虚拟机时，也不会对该磁盘的数据进行还原。<br><strong>3. 独立-非持久：</strong>虚拟机关闭电源或恢复快照后，对磁盘的更改将被丢弃。</p>
-<h2 id="华为虚拟化中的存储模型"><a href="#华为虚拟化中的存储模型" class="headerlink" title="华为虚拟化中的存储模型"></a>华为虚拟化中的存储模型</h2><ol>
-<li><strong>存储资源：</strong>指的是物理存储设备，表示存储的位置。例如SAN、NAS、FusionStorage、Advanced SAN；</li>
-<li><strong>存储设备：</strong>指的是存储资源中管理单元，表示存储空间。例如LUN、共享目录、存储池、本地磁盘等；</li>
-<li><strong>数据存储：</strong>一个可管理、可操作的逻辑管理单元，处于存储设备之上，与存储设备相对应，用于承载虚拟机业务。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>华为云计算</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P4-揭秘FusionCompute的核心技术——Xen与KVM</title>
-    <url>/2020/08/12/P4-%E6%8F%AD%E7%A7%98FusionCompute%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Xen%E4%B8%8EKVM/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Xen和KVM都是开源的虚拟化软件，同时它们也是FusionCompute所采用的底层架构。为了方便我们后续对FusionCompute的学习，有必要对Xen和KVM进行初步理解。</p>
-<h1 id="Xen-vs-KVM"><a href="#Xen-vs-KVM" class="headerlink" title="Xen vs KVM"></a>Xen vs KVM</h1><h2 id="Xen"><a href="#Xen" class="headerlink" title="Xen"></a>Xen</h2><p>Xen的虚拟化架构如下：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-15-51-55.png" alt="2020-08-12-15-51-55"><br>在Xen架构中，有两类虚拟机：Domain 0和Domain U。<br><strong>Domain 0：</strong>属于控制域，是一台启动优先级最高、处于特权级别的虚拟机，用于对Domain U进行管理。全虚拟化场景下，Xen负责DomainU的CPU虚拟化和内存虚拟化，而Domain 0的后端驱动会主动捕获Domain U的I&#x2F;O操作，通过硬件驱动去实现I&#x2F;O虚拟化。而在半虚拟化场景下，Domain U的前端驱动可以主动将I&#x2F;O请求发送给Domain 0的后端驱动，Domain 0通过硬件驱动直接访问硬件资源，实现I&#x2F;O虚拟化。可以这么说，Domain 0全权负责Domian U的I&#x2F;O虚拟化。<br><strong>Domain U：</strong>普通的用户虚拟机</p>
-<h2 id="KVM"><a href="#KVM" class="headerlink" title="KVM"></a>KVM</h2><p>KVM，全称Kernel-based Virtual Machine，意为“基于内核的虚拟机”。KVM的虚拟化架构如下：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-16-24-43.png" alt="2020-08-12-16-24-43"><br>如今，QEMU-KVM一般都会统称为KVM，因为作者已经把QEMU集成到KVM模块中了。其中，QEMU是一个开源的纯虚拟化软件，运行在用户态，主要负责I&#x2F;O虚拟化。而KVM是一个内核驱动模块，运行在内核态，负责虚拟机的CPU虚拟化和内存虚拟化。</p>
-<h1 id="KVM体系架构"><a href="#KVM体系架构" class="headerlink" title="KVM体系架构"></a>KVM体系架构</h1><p>下图是一个基本的KVM体系架构：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-16-53-27.png" alt="2020-08-12-16-53-27"><br>其中，Libvirt是一个开源的API库，支持C、Python、Go、Java等编程语言。另外，它几乎支持所有主流的虚拟化环境，如VMware ESXi、KVM、Hyper-v、Xen等，在云计算解决方案中使用最为广泛。在KVM中，上层的管理工具都会通过Libvirt，对KVM虚拟化环境进行统一调度、分配。运行时，Libvirt作为一个守护进程驻留在系统后台。</p>
-<h2 id="KVM的IO操作流程"><a href="#KVM的IO操作流程" class="headerlink" title="KVM的IO操作流程"></a>KVM的IO操作流程</h2><h3 id="全虚拟化（默认）"><a href="#全虚拟化（默认）" class="headerlink" title="全虚拟化（默认）"></a>全虚拟化（默认）</h3><p><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-18-02-15.png" alt="2020-08-12-18-02-15"></p>
-<ul>
-<li>1-2：KVM主动捕获GuestOS的IO请求；</li>
-<li>3：KVM模块将GuestOS的IO请求发送到IO共享页，并通知QEMU到IO共享页读取；</li>
-<li>4：QEMU收到通知，并从IO共享页读取GuestOS的IO请求；</li>
-<li>5-6：QEMU通过设备驱动，将IO请求交由硬件进行模拟执行；</li>
-<li>7：执行完毕后，QEMU将IO执行结果返回到到IO共享页，并通知KVM模块到IO共享页进行读取；</li>
-<li>8：KVM模块收到通知，并从IO共享页读取GuestOS的IO操作结果；</li>
-<li>9-10：KVM模块将IO操作结果返回给GuestOS。</li>
-</ul>
-<p><strong>缺点：采用同步机制，GuestOS需要主动等待KVM模块将IO共享页中的IO操作结果返回以后，才能继续发送下一条IO操作（即阻塞），性能差。</strong></p>
-<h3 id="半虚拟化（使用virtio驱动）"><a href="#半虚拟化（使用virtio驱动）" class="headerlink" title="半虚拟化（使用virtio驱动）"></a>半虚拟化（使用virtio驱动）</h3><p><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-18-02-32.png" alt="2020-08-12-18-02-32"><br><strong>特点：前端驱动部署在GuestOS上，后端驱动部署在QEMU上。</strong></p>
-<ul>
-<li>1-2：GuestOS主动将IO请求通过virtio前端驱动发送到virtio-ring（virtio的IO共享环），并通知QEMU到virtio-ring进行捕获；</li>
-<li>3：QEMU收到通知，并通过virtio后端驱动从virtio-ring读取GuestOS的IO请求；</li>
-<li>4-5：QEMU通过设备驱动，将IO请求交由硬件进行模拟执行；</li>
-<li>6：执行完毕后，QEMU将IO执行结果返回到virtio-ring，并通知KVM模块到virtio-ring进行读取；</li>
-<li>7：KVM模块收到通知，并从virtio-ring读取GuestOS的IO操作结果；</li>
-<li>8：KVM模块将IO操作结果返回给GuestOS。</li>
-</ul>
-<p><strong>特点：采用异步机制，GuestOS将IO请求批量发送到virtio-ring而无需等待，供QEMU的virtio后端驱动批量读取执行，而GuestOS无需等待执行可以批量从virtio-ring中读取IO操作结果（非阻塞），大幅提升了性能。</strong></p>
-]]></content>
-      <categories>
-        <category>华为云计算</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P3-计算虚拟化</title>
-    <url>/2020/08/05/P3-%E8%AE%A1%E7%AE%97%E8%99%9A%E6%8B%9F%E5%8C%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文将会在P2的基础上，对云计算中的重要组成部分——计算虚拟化，进行介绍。</p>
-<h1 id="计算虚拟化概述"><a href="#计算虚拟化概述" class="headerlink" title="计算虚拟化概述"></a>计算虚拟化概述</h1><p>定义：计算虚拟化通过虚拟化软件层（即Hypervisor或VMM），将物理服务器的硬件资源与上层应用进行解耦，形成统一的资源池，将资源弹性分配给逻辑隔离的虚拟机共享使用。</p>
-<h2 id="CPU虚拟化"><a href="#CPU虚拟化" class="headerlink" title="CPU虚拟化"></a>CPU虚拟化</h2><h3 id="CPU特权级别"><a href="#CPU特权级别" class="headerlink" title="CPU特权级别"></a>CPU特权级别</h3><p>在我们的计算机系统中，CPU被划分为几个特权级别，每个级别我们称之为Ring。通过划分Ring级别，可以对CPU进行访问控制。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-16-35-25.png" alt="2020-08-11-16-35-25"></p>
-<ul>
-<li><strong>Ring0：</strong>OS内核，处于特权指令级别，安全等级最高，一般只有操作系统才能执行，是内核态；</li>
-<li><strong>Ring1&#x2F;2：</strong>一般驱动程序，处于非特权指令级别；</li>
-<li><strong>Ring3：</strong>应用程序，处于非特权指令级别，是用户态；</li>
-</ul>
-<h3 id="CPU指令"><a href="#CPU指令" class="headerlink" title="CPU指令"></a>CPU指令</h3><p>说到特权级别，不得不提的一点是CPU指令。CPU指令即指挥机器工作的指示和命令，程序就是一系列按一定顺序排列的指令，执行程序的过程就是计算机的工作过程，而指令集就是CPU中用来计算和控制计算机系统的一套指令的集合。目前，CPU指令集分为两大阵营：<a href="https://baike.baidu.com/item/%E7%B2%BE%E7%AE%80%E6%8C%87%E4%BB%A4%E9%9B%86%E8%AE%A1%E7%AE%97%E6%9C%BA/661859?fromtitle=risc&fromid=62696&fr=aladdin">RISC指令集</a>和<a href="https://baike.baidu.com/item/%E5%A4%8D%E6%9D%82%E6%8C%87%E4%BB%A4%E9%9B%86%E8%AE%A1%E7%AE%97%E6%9C%BA/10307148?fromtitle=CISC&fromid=1189443&fr=aladdin">CISC指令集</a>。</p>
-<p>根据权限划分的不同，CPU指令又分为以下几种：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-16-36-18.png" alt="2020-08-11-16-36-18"></p>
-<ul>
-<li><strong>特权指令：</strong>可以对操作系统产生直接影响的指令，一般不直接提供给给用户使用，例如对系统资源进行管理与分配等；</li>
-<li><strong>非特权指令：</strong>一般的用户指令，不会对操作系统产生直接影响；</li>
-<li><strong>敏感指令：</strong>指的是操作特权资源的指令，如读写时钟、控制中断、修改内存页表、访问地址重定位系统，以及所有IO指令。个人觉得比较有意思的一点是，在RISC架构的主机中，所有敏感指令都属于特权指令，而在CISC架构中，敏感指令一部分属于特权指令，另一部分属于非特权指令。这将直接影响到虚拟化架构的划分。</li>
-</ul>
-<h2 id="CPU虚拟化实现方式"><a href="#CPU虚拟化实现方式" class="headerlink" title="CPU虚拟化实现方式"></a>CPU虚拟化实现方式</h2><h3 id="CPU虚拟化历史、架构"><a href="#CPU虚拟化历史、架构" class="headerlink" title="CPU虚拟化历史、架构"></a>CPU虚拟化历史、架构</h3><p>20世纪60年代中期，IBM在自家的大型机上实现了虚拟化技术，主要针对的是自家采用RISC架构的Power系列处理器。虚拟化后，GuestOS会运行在Ring1级别，我们称之为特权解除。此时，GuestOS并不知道自己运行于Hypervisor上，他认为自己是运行在真实硬件上的。所以GuestOS和HostOS一样，是可以在不经过Hypervisor的情况下，将非特权指令直接交由CPU执行的。那么特权指令呢？对于特权指令，Hypervisor会对它进行Trap→模拟后，再交由CPU执行。举个栗子，GuestOS执行了一条特权指令——关机，这条特权指令是敏感指令。Hypervisor捕获到了这条特权敏感指令以后，采取中断→Trap→模拟动作，实际上GuestOS关闭的是它虚拟机本身，而不会是物理主机，这样就保证了物理主机的安全性。</p>
-<p>而对于CISC架构的主机来说，RISC的虚拟化方式可能会带来一场灾难，为什么呢？我们知道，在CISC架构里面，敏感指令有一部分是特权指令，另一部分是非特权指令。也就是说，CISC的非特权指令里面，包含有敏感指令。再举个栗子，某天GuestOS执行了一条非特权指令——kill掉一个进程，这条指令是敏感指令，将会直接交给CPU执行。如果这条指令kill掉的是Hypervisor的关键进程，Hypervisor因此宕掉，就会影响到上层的虚拟机。想象一下，生产环境中的Hypervisor出现问题，导致Hypervisor上的所有的业务虚拟机受到牵连，导致业务中断，岂不是会造成重大的损失？</p>
-<p>针对以上问题，1999年，VMware推出了针对x86架构主机的虚拟化技术，即全虚拟化方案。</p>
-<h3 id="全虚拟化"><a href="#全虚拟化" class="headerlink" title="全虚拟化"></a>全虚拟化</h3><p>全虚拟化场景下，Hypervisor会主动扫描、捕获、翻译来自GuestOS的所有二进制代码，这个过程我们称之为二进制翻译（BT，Binary Translation）。当发现敏感指令和特权指令时，对指令进行二进制翻译后再交由CPU安全执行。然而，这种频繁的动作会加重Hypervisor的工作负担，消耗大量资源，导致性能下降，这是全虚拟化的一大短板。全虚拟化的代表性产品是VMware ESXi、KVM。</p>
-<h3 id="半虚拟化（准虚拟化）"><a href="#半虚拟化（准虚拟化）" class="headerlink" title="半虚拟化（准虚拟化）"></a>半虚拟化（准虚拟化）</h3><p>半虚拟化场景下，通过修改GuestOS，令GuestOS得知自己正处于Hypervisor之上。修改后的GuestOS会主动将非特权指令中的敏感指令进行替换,使敏感指令只能够作用于其虚拟机本身，从而防止对HostOS造成影响。此外，GuestOS还会通过Hypercall接口，主动将特权指令发送给Hypervisor，让Hypervisor对来自GuestOS的特权指令进行Trap→模拟后，交由CPU执行。半虚拟化大大减轻了Hypervisor的压力，相比于全虚拟化，半虚拟化性能更高。修改GuestOS的方法通常是在GuestOS中安装半虚拟化驱动。例如，VMware ESXi在GuestOS中部署VMtools、Citrix Xen在GuestOS中部署PV Drivers、QEMU-KVM通过安装virtio驱动，实现半虚拟化。QEMU-KVM半虚拟化会在后续的文章重点介绍。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-18-50-17.png" alt="2020-08-11-18-50-17"></p>
-<h3 id="硬件辅助虚拟化"><a href="#硬件辅助虚拟化" class="headerlink" title="硬件辅助虚拟化"></a>硬件辅助虚拟化</h3><p>目前，硬件辅助虚拟化分为两大阵营：Intel VT-x和AMD-v（SVM），均受到主流的虚拟化产品的支持。<br>以Intel VT-x为例，在硬件辅助虚拟化中，CPU被划分为root（根）模式和none root（非根）模式。虚拟化后，Ring0~3处于none root模式，而Hypervisor处于root模式。也就是说，GuestOS会运行在Ring0级别，这意味着GuestOS执行特权指令时，无需再经过Hypervisor的Hypercall接口进行Trap→模拟。而此时，由于采用了硬件辅助虚拟化技术，CPU能够明确区分来自GuestOS的特权指令和非特权指令，当CPU捕获到来自GuestOS的特权指令和敏感指令时，通过VMCALL调用Hypervisor，Hypervisor令GuestOS自动挂起并切换到Root模式，通过CPU执行特权指令和敏感指令，该过程叫VM Exit。为了让GuestOS执行非特权指令（不包含敏感指令），Hypervisor可以调用VMLaunch或VMResume指令切换到Non-root模式，将GuestOS的指令交由CPU执行，该过程叫VM Entry。AMD-v（SVM）提供的硬件辅助虚拟化功能与Intel VT-x大多相似，但是名称上可能有所出入，此处不作过多介绍。<br>硬件辅助虚拟化既解决了全虚拟化的系统开销与性能损耗，也避免了半虚拟化下修改GuestOS的兼容性问题，进一步解放了GuestOS。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-18-49-47.png" alt="2020-08-11-18-49-47"></p>
-<h1 id="内存虚拟化"><a href="#内存虚拟化" class="headerlink" title="内存虚拟化"></a>内存虚拟化</h1><h2 id="术语和概念"><a href="#术语和概念" class="headerlink" title="术语和概念"></a>术语和概念</h2><ul>
-<li>**HPA（Host Physical Address）:**主机物理地址</li>
-<li>**HVA（Host Virtual Address）:**主机虚拟地址</li>
-<li>**GPA（Guest Physical Address）:**虚拟机物理地址</li>
-<li>**GVA（Guest Virtual Address）:**虚拟机虚拟地址</li>
-</ul>
-<h2 id="内存使用原则"><a href="#内存使用原则" class="headerlink" title="内存使用原则"></a>内存使用原则</h2><p>内存使用时，必须遵循以下原则：</p>
-<ul>
-<li>使用内存的地址必定从0开始</li>
-<li>使用内存的地址必定是连续的</li>
-</ul>
-<p>OS内核使用内存是从0开始的。一个应用进程使用内存时，也必须是从0开始的。但是多个应用进程需要使用内存时，而内存却只有一个地址0，怎么办呢？</p>
-<p>其实，在一个OS里面，每个应用进程都有自己的一小段内存空间，即<strong>虚拟地址空间</strong>，由OS内核维持。而应用进程所使用的内存地址，我们称之为<strong>HVA</strong>。其与<strong>HPA</strong>保持着映射关系，保证每个应用进程都能正常使用内存，如图：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-13-43-39.png" alt="2020-08-12-13-43-39"><br>通过以上内容我们可以得出结论：一个OS需要使用内存，必须经过物理地址和虚拟地址。</p>
-<h2 id="内存虚拟化实现方式"><a href="#内存虚拟化实现方式" class="headerlink" title="内存虚拟化实现方式"></a>内存虚拟化实现方式</h2><p>和物理主机的OS一样，虚拟机的GuestOS需要使用内存，也必须经过物理地址和虚拟地址。而虚拟机的本质是HostOS上的一个进程，在虚拟化环境下，如何解决虚拟机的内存使用问题呢？</p>
-<p>这个时候就需要Hypervisor的介入了。Hypervisor在虚拟机和主机之间引入了一层新的地址——<strong>GPA</strong>。Hypervisor将主机非连续的地址映射成了连续的虚拟机物理地址，供虚拟机使用，从而满足了虚拟机使用内存的条件，如图：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-14-14-11.png" alt="2020-08-12-14-14-11"></p>
-<h1 id="I-x2F-O虚拟化"><a href="#I-x2F-O虚拟化" class="headerlink" title="I&#x2F;O虚拟化"></a>I&#x2F;O虚拟化</h1><p>I&#x2F;O指的是输入&#x2F;输出设备，相信大家都知道吧！一般来说，我们的硬盘、网卡等设备都属于I&#x2F;O设备。I&#x2F;O虚拟化将会在下一篇文章重点介绍。</p>
-<h2 id="IO模拟-IO全虚拟化"><a href="#IO模拟-IO全虚拟化" class="headerlink" title="IO模拟(IO全虚拟化)"></a>IO模拟(IO全虚拟化)</h2><p>完全使用Hypervisor来模拟虚拟机的I&#x2F;O请求，由Hypervisor主动捕获虚拟机的IO操作，然后将捕获的IO操作转发给硬件。这种虚拟化方式不需要对OS和驱动程序进行修改，因此这种方式对于多种虚拟化技术的可移植性和兼容性比较好，但是需要在GuestOS和Hypervisor之间频繁进行交互，性能很差（例如模拟键盘鼠标等常用硬件，通过焦点捕获，焦点被哪个主机捕获就被哪个主机使用）；</p>
-<h2 id="IO半虚拟化"><a href="#IO半虚拟化" class="headerlink" title="IO半虚拟化"></a>IO半虚拟化</h2><p>在GuestOS中部署一个前端驱动（也就是上文所讲的半虚拟化驱动），通过前端驱动，将GuestOS的IO请求主动发送给Hypervisor的后端驱动，适用于硬盘和网卡,性能高；</p>
-<h2 id="IO-through"><a href="#IO-through" class="headerlink" title="IO-through"></a>IO-through</h2><p>IO设备直通，也就是裸设备映射，直接将物理设备（如硬盘、网卡等）分配给虚拟机，但是需要硬件支持（在Xen下由Dom0分配，但是访问使用直接使用,不经过Dom0，需要硬件支持）。</p>
-]]></content>
-      <categories>
-        <category>华为云计算</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P2-虚拟化技术概览</title>
-    <url>/2020/08/04/P2-%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF%E6%A6%82%E8%A7%88/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上一篇文章已经介绍了云计算的一些基础概念，让我们对云计算有了一定的了解。那么，云计算中强大的功能从何而来？它又是如何实现的呢？</p>
-<h1 id="虚拟化技术"><a href="#虚拟化技术" class="headerlink" title="虚拟化技术"></a>虚拟化技术</h1><h2 id="最初印象"><a href="#最初印象" class="headerlink" title="最初印象"></a>最初印象</h2><p>在日常生活中，我们可能已经听说过，或者说已经在使用虚拟化技术了，下图是我们日常使用非常广泛的一个虚拟机软件：VMware Workstation：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-04-16-11-10.png" alt="2020-08-04-16-11-10"><br>通俗的讲法就是，虚拟机可以在一台具备操作系统的物理机上，运行一台或多台和物理机一样具有操作系统的虚拟主机。这可能是我们最早对虚拟机的一个理解了。</p>
-<h2 id="虚拟化概念"><a href="#虚拟化概念" class="headerlink" title="虚拟化概念"></a>虚拟化概念</h2><p>在虚拟化中，我们需要了解一些重要的概念以及专业术语：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-15-43-52.png" alt="2020-08-11-15-43-52"><br><strong>OS：</strong>操作系统<br><strong>Guest OS：</strong>虚拟机操作系统<br><strong>Virtual Machine(VM)：</strong>虚拟机<br><strong>Hypervisor：</strong>虚拟化软件层&#x2F;虚拟机监视器（也称VMM，Virtual Machine Monitor）<br><strong>Host OS：</strong>运行在物理机之上的OS<br><strong>Host Machine：</strong>（主机）物理机</p>
-<p>在虚拟化中，OS必不可少。OS是Operating System的缩写，即操作系统。OS具有以下作用：</p>
+    <title>ESXi升级方法 - 从5.5到6.0</title>
+    <url>/2020/04/26/ESXi%E4%BB%8E5.5%E5%88%B06.0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上个月给数据中心的vSphere平台做了一次升级，期间遇到各种各样的坑，还好后期都完美解决了，不然真得跑路了（都是自找的&#x3D; &#x3D;）。现在我来把当时的整个操作流程整理一下。</p>
+<h1 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h1><p>先简单介绍一下这套vSphere平台的配置。平台共包含10个计算节点，均已组成集群并配置了HA，集群使用IPSAN共享存储，每个计算节点正在运行的ESXi版本是5.1。现在的任务是将每个节点的ESXi版本都升级到5.5。</p>
+<p>那么问题来了，怎样才能保证ESXi能够平滑升级的同时，又不影响到平台上的虚拟机呢？这时，我们可以利用集群的特性，将需要升级的节点上的虚拟机热迁移到其他节点（热迁移需要配置vMotion），然后将这个节点切换到维护模式，再进行升级。这样既能完成升级，又能保证业务不中断，岂不美哉！</p>
+<h1 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h1><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>前面balabala了一堆废话，是时候开始实操了！我们先准备好一些东西：</p>
 <ol>
-<li>接管硬件；</li>
-<li>调度和分配软硬件资源；</li>
-<li>为OS软件进行升级、补丁更新；</li>
-<li>对主机的生命周期进行管理；</li>
-<li>提供人机交互界面；</li>
+<li>超级终端软件（如PuTTY、SecureCRT、XShell、MobaXTerm等，Win10 CMD自带的SSH功能也是可以的）；</li>
+<li>ESXi 5.5升级包（可从VMware官网或其他途径获取）</li>
+<li>VMware vSphere Client（vSphere客户端）</li>
 </ol>
-<h2 id="虚拟化特点"><a href="#虚拟化特点" class="headerlink" title="虚拟化特点"></a>虚拟化特点</h2><p><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-15-30-43.png" alt="2020-08-11-15-30-43"></p>
-<ol>
-<li><strong>分区：</strong>通过虚拟化技术，对主机资源（计算、存储、网络）进行逻辑划分；</li>
-<li><strong>隔离：</strong>虚拟化技术可以保证虚拟机跟虚拟机、虚拟机跟主机进行隔离。例如，某一台虚拟机宕机了或者进程未响应，并不会影响到主机或其他虚拟机的运行；</li>
-<li><strong>封装：</strong>虚拟机可以封装为文件，以文件的形式存在，便于虚拟机在不同的主机之间迁移；</li>
-<li><strong>独立：</strong>每个虚拟机都是独立个体；</li>
-</ol>
-<h2 id="虚拟化类型"><a href="#虚拟化类型" class="headerlink" title="虚拟化类型"></a>虚拟化类型</h2><p>根据硬件和虚拟化层的层级关系，虚拟化类型分为以下几种。这里我们来简单介绍一下：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-15-17-51.png" alt="2020-08-11-15-17-51"></p>
-<ol>
-<li><strong>I型</strong>：裸金属型虚拟化，直接在硬件上部署Hypervisor，在Hypervisor上运行虚拟机。典型代表有VMware ESXi、Citrix Xen、Hyper-v、KVM、FusionCompute（基于KVM）。I型虚拟化尽可能地使用所有的硬件资源，减少不必要的性能损耗，运行较为稳定。缺点是实现方式较为复杂，需要针对硬件和系统内核进行开发。</li>
-<li><strong>II型</strong>：宿主型虚拟化（也可称为寄居虚拟化），在硬件上部署HostOS，在HostOS上部署相关的应用软件实现虚拟化，可以理解为将Hypervisor寄生于HostOS上而实现的虚拟化技术。典型代表有VMware Workstation、VirtualBox。II型虚拟化也是我们日常在Windows平台上使用最广泛的虚拟化类型之一。通常，II型虚拟化是针对OS进行开发的，缺点是额外性能开销大。</li>
-<li><strong>操作系统虚拟化（应用级虚拟化）</strong>：一般指的是容器技术，流行的代表有LXC、Docker等；</li>
-<li><strong>混合虚拟化</strong>：通过嵌入到系统内核的虚拟化驱动模块，来实现虚拟化，典型代表是KVM。华为FusionCompute就是一套底层基于KVM的虚拟化软件；</li>
-</ol>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>新手可能会觉得这篇文章非常枯燥无味，这个很正常，本人也是这么熬过来的。毕竟理论是实践的基础，在搞懂了虚拟化的概念后，后续学习将会变得更加顺利。</p>
-]]></content>
-      <categories>
-        <category>华为云计算</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P1-初识云计算</title>
-    <url>/2020/07/09/P1-%E5%88%9D%E8%AF%86%E4%BA%91%E8%AE%A1%E7%AE%97/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>云计算作为近几年发展非常迅速的技术，已经成为各大应用的一个基础。那什么是云计算呢？</p>
-<h1 id="初识云计算"><a href="#初识云计算" class="headerlink" title="初识云计算"></a>初识云计算</h1><h2 id="何为云计算？"><a href="#何为云计算？" class="headerlink" title="何为云计算？"></a>何为云计算？</h2><p>美国国家标准与技术研究院（NIST）对云计算作出了定义：</p>
-<blockquote>
-<p>云计算是一个模型，这个模型可以方便地按需访问一个可配置的计算资源（例如，网络、服务器、存储设备、应用程序以及服务）的公共集。这些资源可以被迅速供应并释放，使得管理资源的工作量、与服务提供商的交互量减小到最低限度。</p>
-</blockquote>
-<p>通俗来讲，“云”指的是提供资源的网络，而“计算”则指的是一台或多台性能强大的计算机提供的计算服务（包括各种功能、资源等）。云计算通过网络，将大量的计算资源聚合起来，使用软件进行智能化管理，形成计算资源池，并向广大用户提供计算服务。云计算并非是一种全新的技术，而是一种以互联网为中心的全新的网络应用概念。</p>
-<h2 id="云计算的部署模式"><a href="#云计算的部署模式" class="headerlink" title="云计算的部署模式"></a>云计算的部署模式</h2><p>云计算常见的部署模式分为三种，分别是公有云、私有云、混合云。公有云由第三方服务提供商建设，供用户使用；私有云由用户自行建设，即资源建设者&#x3D;资源使用者；混合云则为私有云和公有云的混合体。而根据层级关系，云计算又分为多种服务模式，如下图：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-09-19-04-46.png" alt="2020-07-09-19-04-46"></p>
-<ol>
-<li><strong>IaaS（Infrastructure as a Service，基础设施即服务）</strong>，把IT基础设施作为服务提供给用户使用，典型代表为云服务器；</li>
-<li><strong>PaaS（Platform as a Service，平台即服务）</strong>，把IT基础设施上的平台作为服务提供给用户使用,如阿里云的RDS云数据库等；</li>
-<li><strong>SaaS（Software as a Service，软件即服务）</strong>，在IT基础设施的平台上部署应用软件，并将这些应用软件提供给用户使用。常见的SaaS产品有钉钉、企业微信、Office 365等。</li>
-</ol>
-<h2 id="为何需要云计算？"><a href="#为何需要云计算？" class="headerlink" title="为何需要云计算？"></a>为何需要云计算？</h2><p>云计算具有以下几个明显优势：</p>
-<ol>
-<li><strong>按需自助服务。</strong> 用户可以按需调配计算资源，例如云服务器使用时长、存储空间大小、网络带宽等性能配置，无需人为与服务提供商进行交互；</li>
-<li><strong>广泛的网络接入。</strong> 用户可以通过智能手机、个人电脑等标准的客户端平台，通过网络访问并使用云计算资源。</li>
-<li><strong>资源池化。</strong> 云计算使用多租户模型，划分为众多的云资源池，并将资源池分布到多个地域。用户无需知晓资源的具体位置，即可使用云计算资源；</li>
-<li><strong>快速弹性伸缩。</strong> 根据用户需求，云计算资源能够被快速、灵活地分配、下发、动态调整、回收；</li>
-<li><strong>服务可计量。</strong> 云计算能够根据算法，自动调整、优化云资源（例如CPU、内存、磁盘、带宽等）的使用，并对云资源进行实时监控、记录，为服务提供商和用户提供透明的服务使用状况。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>华为云计算</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Kickstart+PXE批量部署Linux操作系统.md</title>
-    <url>/2020/07/06/%E4%BD%BF%E7%94%A8Kickstart%E3%80%81PXE%E6%89%B9%E9%87%8F%E9%83%A8%E7%BD%B2Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>相信大家都知道该怎么去安装Linux操作系统了，无非是通过U盘、光驱来安装，家里有矿的伙计已经开始用服务器BMC的远程控制台来安装操作系统了。但是！如果在一个生产环境里面，有成百上千台服务器正等着你去部署操作系统，如果仍然采用以上的方法来部署操作系统，大量重复、繁琐且毫无技术可言的操作将会使你身心疲惫，甚至逐步起了杀心（别问我怎么知道的）。</p>
-<p>都0202年了，你们还会用传统方法给生产环境来部署操作系统吗？</p>
-<h1 id="关于无人值守安装"><a href="#关于无人值守安装" class="headerlink" title="关于无人值守安装"></a>关于无人值守安装</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
-<p>无人值守安装(Unattended Setup)是指软件安装时无需任何用户干预，直接按默认或通过应答文件设置安装，这对于无特殊需求的用户或企业大批量部署安装操作系统及软件时非常方便。<br>——引自<a href="https://baike.baidu.com/item/%E6%97%A0%E4%BA%BA%E5%80%BC%E5%AE%88%E5%AE%89%E8%A3%85/4253153?fr=aladdin">百度百科</a>。</p>
-</blockquote>
-<p>以前用过Ghost版系统的童鞋应该会知道，在安装Windows时，几乎不需要我们去设置安装系统的各种参数，这其实也算是无人值守安装的一种了。而本文给大家介绍的无人值守安装，是针对一个拥有成百上千台服务器的生产环境而言的，具体介绍请继续往下看。</p>
-<h2 id="所需技术"><a href="#所需技术" class="headerlink" title="所需技术"></a>所需技术</h2><p><strong>1. PXE</strong><br>PXE不是一种安装方式，而是一种引导的方式。计算机可以通过PXE，从网络进行操作系统引导。PXE需要配合TFTP和DHCP使用。</p>
-<p><strong>2. DHCP</strong><br>DHCP相信大家都不陌生，它的作用是为网络上的每台主机动态分配可用的IP地址。在一个局域网内，两台计算机要实现文件传输，IP地址是必不可少的。这也就不难理解，为何在PXE安装中需要用到DHCP服务了。</p>
-<p><strong>3. TFTP</strong><br>同样是文件传输协议，和FTP不一样的是，TFTP免去了用户认证等功能，基于UDP进行文件传输，且不支持交互。在PXE安装时，会自动加载PXE ROM中的TFTP客户端，从远程服务器获取所需的驱动和引导文件。</p>
-<h1 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h1><p><strong>实验环境：</strong></p>
-<ol>
-<li>两台主机，一台作为Server，安装CentOS7；另一台作为Client，不安装操作系统；</li>
-<li>CentOS 7安装镜像；</li>
-<li>确保两台主机在同一网段，且<strong>必须保证该网段内没有其他DHCP服务器的干扰</strong>！</li>
-</ol>
-<h2 id="安装配置DHCP服务"><a href="#安装配置DHCP服务" class="headerlink" title="安装配置DHCP服务"></a>安装配置DHCP服务</h2><p>安装DHCP服务：<code>yum install dhcp -y</code><br>编辑DHCP配置文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /etc/dhcp/dhcpd.conf</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">allow booting;  /*允许引导*/</span><br><span class="line">allow bootp;    /*允许BOOTP协议，使局域网内没有操作系统的主机也能获取IP地址*/</span><br><span class="line">ddns-update-style interim;</span><br><span class="line">ignore client-updates;</span><br><span class="line">subnet 192.168.100.0 netmask 255.255.255.0 &#123;    /*声明一个子网网段*/</span><br><span class="line">        option subnet-mask      255.255.255.0;  /*子网掩码*/</span><br><span class="line">        range dynamic-bootp 192.168.100.101 192.168.100.200;    /*IP地址分配范围*/</span><br><span class="line">        default-lease-time      21600;      /*默认地址租期*/</span><br><span class="line">        max-lease-time          43200;      /*最大地址租期*/</span><br><span class="line">        next-server             192.168.100.100;    /*指定一台PXE引导服务器*/</span><br><span class="line">        filename                <span class="string">&quot;pxelinux.0&quot;</span>;   /*加载引导驱动文件pxelinux.0*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>PS：如果需要跨多个子网分配IP地址，则还需要为网卡添加相应的子网IP，否则DHCP服务器将无法启动！</p>
-<h2 id="安装FTP服务"><a href="#安装FTP服务" class="headerlink" title="安装FTP服务"></a>安装FTP服务</h2><p>文章将使用HTTP作为Linux操作系统的安装源。安装Apache：<code>yum install vsftpd -y</code></p>
-<p>挂载CentOS7安装镜像到<code>/var/ftp/CentOS_7.2.1511</code>目录下:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /var/ftp/CentOS_7.2.1511</span><br><span class="line">mount /dev/sr0 /var/ftp/CentOS_7.2.1511</span><br></pre></td></tr></table></figure>
-<p>启动FTP服务,并设置为开机自启：<code>systemctl enable --now vsftpd</code></p>
-<h2 id="安装配置TFTP服务"><a href="#安装配置TFTP服务" class="headerlink" title="安装配置TFTP服务"></a>安装配置TFTP服务</h2><p>安装DHCP服务：<code>yum install tftp-server xinetd -y</code><br>编辑TFTP配置文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /etc/xinetd.d/tftp</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">service tftp</span><br><span class="line">&#123;</span><br><span class="line">        socket_type             = dgram</span><br><span class="line">        protocol                = udp</span><br><span class="line">        <span class="built_in">wait</span>                    = <span class="built_in">yes</span></span><br><span class="line">        user                    = root</span><br><span class="line">        server                  = /usr/sbin/in.tftpd</span><br><span class="line">        server_args             = -s /var/lib/tftpboot</span><br><span class="line">        <span class="built_in">disable</span>                 = no    /*默认为<span class="built_in">yes</span>，此处改为no*/</span><br><span class="line">        per_source              = 11</span><br><span class="line">        cps                     = 100 2</span><br><span class="line">        flags                   = IPv4</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="准备好引导所需文件"><a href="#准备好引导所需文件" class="headerlink" title="准备好引导所需文件"></a>准备好引导所需文件</h2><h3 id="SYSLinux"><a href="#SYSLinux" class="headerlink" title="SYSLinux"></a>SYSLinux</h3><p>SYSLinux是一个用于提供引导加载的服务程序，此处我们只需用到它里面的引导文件。安装SYSLinux软件包：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install syslinux -y</span><br></pre></td></tr></table></figure>
-
-<p>将一些必备的引导文件复制到<code>/var/lib/tftpboot/</code>目录下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> /var/ftp/CentOS_7.2.1511/syslinux/pxelinux.0 /var/lib/tftpboot/</span><br><span class="line"><span class="built_in">cp</span> /var/ftp/CentOS_7.2.1511/images/pxeboot/&#123;vmlinuz,initrd.img&#125; /var/lib/tftpboot/</span><br><span class="line"><span class="built_in">cp</span> /var/ftp/CentOS_7.2.1511/isolinux/&#123;vesamenu.c32,boot.msg&#125; /var/lib/tftpboot/</span><br></pre></td></tr></table></figure>
-
-<h3 id="Kickstart自动应答文件"><a href="#Kickstart自动应答文件" class="headerlink" title="Kickstart自动应答文件"></a>Kickstart自动应答文件</h3><p>自动应答文件可以在PXE安装操作系统时，帮助我们自动设置系统安装参数（包括网络配置、磁盘、密码等），减少人机交互。在Linux完成安装后，会在home目录下自动生成一个应答文件anaconda-ks.cfg，我们现在可以将这个应答文件利用起来。将anaconda-ks.cfg复制到<code>/var/ftp/Kickstart/</code>目录下，并重命名为CentOS.cfg：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /var/ftp/kickstart</span><br><span class="line"><span class="built_in">cp</span> ~/anaconda-ks.cfg /var/ftp/Kickstart/CentOS.cfg</span><br><span class="line"><span class="built_in">chmod</span> +r /var/ftp/Kickstart/CentOS.cfg  /*赋予执行权限*/</span><br></pre></td></tr></table></figure>
-<p>按需修改应答文件：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /var/ftp/Kickstart/CentOS.cfg</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">......</span><br><span class="line">url --url=ftp://192.168.100.100/CentOS_7.2.1511    /*默认为CDROM，此处改为FTP安装源路径*/</span><br></pre></td></tr></table></figure>
-<div class="note info flat"><p><strong>提示！</strong><br>如果有图形界面，还可以安装system-config-kickstart，来进一步定制Kickstart！</p>
-</div>
-<h3 id="引导菜单文件"><a href="#引导菜单文件" class="headerlink" title="引导菜单文件"></a>引导菜单文件</h3><p>在tftpboot下新建一个目录pxelinux.cfg（是目录不是文件！）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /var/lib/tftpboot/pxelinux.cfg</span><br></pre></td></tr></table></figure>
-
-<p>将启动菜单配置文件复制到pxelinux.cfg目录下，并重命名为default：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> /var/ftp/CentOS_7.2.1511/isolinux/isolinux.cfg /var/lib/tftpboot/pxelinux.cfg/default</span><br></pre></td></tr></table></figure>
-
-<p>修改启动菜单，将linux作为默认引导项，系统安装形式改为http协议：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /var/lib/tftpboot/pxelinux.cfg/default</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">default linux    /*默认为vesamenu.c32，此处改为linux*/</span><br><span class="line">......</span><br><span class="line">label linux</span><br><span class="line">  menu label ^Install CentOS 7</span><br><span class="line">  kernel vmlinuz</span><br><span class="line">  append initrd=initrd.img inst.stage2=ftp://192.168.100.100/CentOS_7.2.1511/ ks=ftp://192.168.100.100/Kickstart/CentOS.cfg</span><br><span class="line">  /*默认安装源为本地光盘路径。本文安装源使用的是ftp，此处改为安装源的URL*/</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-<h2 id="最后阶段"><a href="#最后阶段" class="headerlink" title="最后阶段"></a>最后阶段</h2><p>启动所有服务：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> --now dhcpd xinetd vsftpd</span><br></pre></td></tr></table></figure>
-<p>配置防火墙，放行TFTP、FTP所需端口：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">firewall-cmd --permanent --add-port=69/udp</span><br><span class="line">firewall-cmd --permanent --add-service=ftp</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-<p>设置SELinux为宽松模式：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">setenforce 0</span><br><span class="line">sed -i <span class="string">&#x27;s/enforcing/permissive/g&#x27;</span> /etc/selinux/config</span><br></pre></td></tr></table></figure>
-
-<h1 id="客户机测试"><a href="#客户机测试" class="headerlink" title="客户机测试"></a>客户机测试</h1><p>打开虚拟机电源。由于未安装操作系统，虚拟机将会自动从网络进行引导：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-06-15-47-57.png" alt="2020-07-06-15-47-57"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-06-15-48-38.png" alt="2020-07-06-15-48-38"></p>
-<p>当出现下图所示界面以后，说明无人值守安装的基本配置已经成功，此时像往常一样进行系统安装操作即可：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-06-16-03-02.png" alt="2020-07-06-16-03-02"></p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>本文实现的无人值守安装只能算是半自动化部署方式，因为在安装过程中，还需要对安装的主机进行一些参数设置。在实际生产环境下，还需要根据服务器的硬件配置（例如磁盘容量等），来定制应答文件。总之，通过Kickstart+PXE批量部署操作系统，不仅能够将运维人员从重复性的工作中解放出来，还能极大地提升系统安装效率。</p>
-]]></content>
-      <categories>
-        <category>瞎折腾</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-        <tag>运维</tag>
-        <tag>Linux</tag>
-        <tag>CentOS</tag>
-        <tag>懒人</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>定制属于你的ESXi——为ESXi6.7添加驱动</title>
-    <url>/2020/07/04/%E5%AE%9A%E5%88%B6%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84ESXi%E2%80%94%E2%80%94%E4%B8%BAESXi6.7%E6%B7%BB%E5%8A%A0%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>ESXi是目前企业采用的主流虚拟化方案之一，同时也深受广大极客和发烧友的钟爱。ESXi能够兼容大部分的服务器设备，无需额外安装驱动即可安装运行。但是，某些厂商设备采用了第三方或者自有的配件，而原生ESXi往往没有这些配件的驱动程序，这就会导致ESXi无法识别硬件、安装失败。</p>
-<p>早期版本的ESXi（6.5以及更早版本）是可以通过ESXi Customizer来添加第三方驱动程序的，而ESXi6.7已经不再支持用旧版的ESXi Customizer来添加驱动了。So，笔者参照了一下这位大神<a href="https://www.vediotalk.com/archives/2356">Vedio Talk</a>的做法，给大家介绍如何为6.7和更高版本的ESXi添加第三方驱动程序。</p>
-<h1 id="进入主题"><a href="#进入主题" class="headerlink" title="进入主题"></a>进入主题</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p><strong>本文使用到的软件如下：</strong></p>
-<ol>
-<li>ESXi 6.7 u3b离线安装包</li>
-<li>ESXi Customizer PS→<a href="http://vibsdepot.v-front.de/tools/ESXi-Customizer-PS-v2.6.0.ps1">点击此处下载</a></li>
-<li>PowerShell（Windows 10自带的命令行环境）</li>
-<li>硬件的ESXi驱动（本文以H3C服务器的阵列卡驱动为例）</li>
-</ol>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="安装Vmware-PowerCLI模块"><a href="#安装Vmware-PowerCLI模块" class="headerlink" title="安装Vmware PowerCLI模块"></a>安装Vmware PowerCLI模块</h3><p>打开Windows PowerShell，输入<code>Install-Module -Name VMware.PowerCLI</code>,在线安装VMware命令行模块（由于是从国外代码库进行下载，此处请自备一杯酸酸乳，不然半年都下不完…）：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-13-25-37.png" alt="2020-07-04-13-25-37"><br>ps：输入A全部选是</p>
-<p>输入<code>set-ExecutionPolicy Bypass</code>，调整PowerShell执行策略，允许运行脚本：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-13-26-02.png" alt="2020-07-04-13-26-02"></p>
-<h3 id="为ESXi添加驱动"><a href="#为ESXi添加驱动" class="headerlink" title="为ESXi添加驱动"></a>为ESXi添加驱动</h3><p><a href="http://vibsdepot.v-front.de/tools/">下载ESXi Customizer PS</a>。将ESXi离线包、驱动程序、ESXi Customizer放到同一个目录，方便操作：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-14-37-10.png" alt="2020-07-04-14-37-10"></p>
-<p>在该目录下，按住Shift键+鼠标右键，在该目录下打开PowerShell：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-14-38-31.png" alt="2020-07-04-14-38-31"></p>
-<p>使用命令，为ESXi包添加驱动。命令格式如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.\ESXi-Customizer-PS-v2.6.0.ps1 -izip &lt;ESXi离线包路径&gt; -pkgDir &lt;驱动文件路径&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-13-30-33.png" alt="2020-07-04-13-30-33"></p>
-<p>命令执行完成以后，会在相同目录下生成一个包含驱动的ISO镜像文件。这时我们就可以用这个ISO镜像来安装ESXi了：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-16-00-08.png" alt="2020-07-04-16-00-08"></p>
-<h2 id="另请参阅…"><a href="#另请参阅…" class="headerlink" title="另请参阅…"></a>另请参阅…</h2><ul>
-<li>ESXi驱动包下载：<a href="https://vibsdepot.v-front.de/wiki/index.php/List_of_currently_available_ESXi_packages">https://vibsdepot.v-front.de/wiki/index.php/List_of_currently_available_ESXi_packages</a></li>
-<li>VMware官方网站：<a href="https://www.vmware.com/">https://www.vmware.com/</a></li>
-</ul>
+<h2 id="通过vSphere-Client进行操作"><a href="#通过vSphere-Client进行操作" class="headerlink" title="通过vSphere Client进行操作"></a>通过vSphere Client进行操作</h2><p>使用vSphere Client登录到ESXi节点，将节点切换到维护模式：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-00-29.png" alt="2020-04-26-18-00-29"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-04-01.png" alt="2020-04-26-18-04-01"></p>
+<p>将ESXi升级包上传到数据存储，并记下数据存储路径，后续升级操作要用到。例如我这里将升级包上传到了本地存储，那么我现在得记下本地存储的路径：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-20-10.png" alt="2020-04-26-18-20-10"></p>
+<h2 id="通过SSH登录到ESXi节点"><a href="#通过SSH登录到ESXi节点" class="headerlink" title="通过SSH登录到ESXi节点"></a>通过SSH登录到ESXi节点</h2><p>打开该节点的配置→安全配置文件，启动SSH服务：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-05-41.png" alt="2020-04-26-18-05-41"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-06-45.png" alt="2020-04-26-18-06-45"></p>
+<p>打开超级终端软件（笔者用的是XShell），使用ESXi的账号密码，用SSH登录到ESXi节点：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-09-19.png" alt="2020-04-26-18-09-19"></p>
+<h2 id="使用命令对ESXi进行平滑升级"><a href="#使用命令对ESXi进行平滑升级" class="headerlink" title="使用命令对ESXi进行平滑升级"></a>使用命令对ESXi进行平滑升级</h2><p>使用这条命令列出ESXi升级包的版本：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">esxcli software sources profile list -d &lt;ESXi升级包所在的数据存储的路径&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-15-43.png" alt="2020-04-26-18-15-43"><br>（注：数据存储路径见本文3.2）</p>
+<p>然后使用这条命令，通过升级包进行升级</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">esxcli software profile update -d &lt;ESXi升级包所在的数据存储的路径&gt; -p &lt;ESXi升级包版本&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-19-32-24.png" alt="2020-04-26-19-32-24"><br>稍等片刻会出现升级结果。升级成功后，要求重新启动，这时输入reboot命令，将该节点重启即可。</p>
+<h2 id="后续操作"><a href="#后续操作" class="headerlink" title="后续操作"></a>后续操作</h2><p>重启完成后，再次用vSphere Client登录到ESXi，看看ESXi的版本是不是升级到5.5了？<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-19-40-10.png" alt="2020-04-26-19-40-10"></p>
+<p>确认升级成功后，将ESXi节点退出维护模式：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-19-44-17.png" alt="2020-04-26-19-44-17"></p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>以上就是ESXi的平滑升级流程。当然，在生产环境下，系统升级前必须拟定相应的方案（例如升级流程、应急预案等），并对原系统进行测试、数据备份，升级过程中必须严格遵循操作规程，升级后还需要保留一定时长的观察期，当这一系列流程都顺利完成后，才能正式交付使用。</p>
 ]]></content>
       <categories>
         <category>搬砖随记</category>
@@ -454,143 +129,8 @@
       <tags>
         <tag>服务器</tag>
         <tag>vSphere</tag>
-        <tag>运维</tag>
-        <tag>驱动</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>华三服务器·UIS RAID2000 M2（PM8060）阵列卡基本配置</title>
-    <url>/2020/07/01/%E5%8D%8E%E4%B8%89%E6%9C%8D%E5%8A%A1%E5%99%A8%C2%B7UIS%20RAID2000%20M2%EF%BC%88PM8060%EF%BC%89%E9%98%B5%E5%88%97%E5%8D%A1%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p><strong>磁盘阵列</strong>（Redundant Arrays of Independent Disks，RAID）是如今大多数服务器的一个基本组成部分，它是由多块独立磁盘组合而成的磁盘组，用于提升整个磁盘系统效能，以及数据的安全性。</p>
-</blockquote>
-<p>目前实现阵列有两种形式，分为软阵列和硬阵列。软阵列需要通过软件来实现阵列功能，如Windows的RAID5卷、Linux的mdadm工具等。而硬阵列则需要通过硬件来实现，如阵列卡。本文以华三服务器为例的UIS RAID2000 M2（PM8060）阵列卡为例，介绍如何配置一个简单的磁盘阵列。</p>
-<h1 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h1><h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><ol>
-<li>服务器：H3C R4900 G2</li>
-<li>服务器包含一块UIS RAID2000 M2（PM8060）阵列卡，和3个600GB的SAS磁盘</li>
-<li>服务器已启用HDM（华三服务器的BMC）</li>
-<li>一台电脑，用于远程操作<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2>使用电脑登录到服务器的BMC，点击远程控制台，下载控制台程序并运行（需要安装JRE）：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-10-03.png" alt="2020-07-01-18-10-03"><br>点击控制台左上角的电源，点击开机。如果服务器处于开机状态，则点击重启。等待系统自检通过后（大概需要一分钟），按屏幕提示，按下Esc键或Del键进入BIOS。如下图操作：</li>
-</ol>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-33-03.png" alt="2020-07-01-18-33-03"></p>
-<p>选中高级→PMC maxView Storage Manager，一路回车，进入RAID配置界面：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-13-10.png" alt="2020-07-01-18-13-10"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-16-04.png" alt="2020-07-01-18-16-04"></p>
-<p>选中Logical Device Configuration→Create Array，创建一个新的逻辑磁盘组。这里以创建一个RAID1阵列为例：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-19-18.png" alt="2020-07-01-18-19-18"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-19-43.png" alt="2020-07-01-18-19-43"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-21-13.png" alt="2020-07-01-18-21-13"><br>ps：由于是实验，这里使用Quick Init（快速部署）即可。</p>
-<p>查看配置结果：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-46-38.png" alt="2020-07-01-18-46-38"></p>
-]]></content>
-      <categories>
-        <category>搬砖随记</category>
-      </categories>
-      <tags>
-        <tag>RAID</tag>
-        <tag>磁盘</tag>
-        <tag>BIOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更高的运维格调：Grafana对接Zabbix</title>
-    <url>/2020/06/06/%E6%9B%B4%E9%AB%98%E7%9A%84%E8%BF%90%E7%BB%B4%E6%A0%BC%E8%B0%83%EF%BC%9AGrafana%E5%AF%B9%E6%8E%A5Zabbix/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="Grafana——开源、高逼格可视化监控平台！"><a href="#Grafana——开源、高逼格可视化监控平台！" class="headerlink" title="Grafana——开源、高逼格可视化监控平台！"></a>Grafana——开源、高逼格可视化监控平台！</h2><p>搞过运维的应该都听说过Grafana吧！以下这张图就是Grafana的：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-11-49-01.png" alt="2020-06-06-11-49-01"></p>
-<h2 id="再来看看Zabbix"><a href="#再来看看Zabbix" class="headerlink" title="再来看看Zabbix"></a>再来看看Zabbix</h2><p>有人可能问了，Zabbix不是有自带图表吗，为啥还需要Grafana？其实怎么说呢，Zabbix还是偏后端的监控系统，主要面向运维人员。而且，Zabbix图表类型不够丰富，对于一般人来说不太友好。So，我们可以将Grafana与Zabbix对接，作为Zabbix的Dashboard（仪表板），接收来自Zabbix的数据，并通过各种形式的图表展示出来。</p>
-<p>废话不多说，开始我的表演。</p>
-<h1 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h1><h2 id="Grafana安装部署"><a href="#Grafana安装部署" class="headerlink" title="Grafana安装部署"></a>Grafana安装部署</h2><div class="note info flat"><p><strong>注意：</strong></p>
-<ol>
-<li>本文使用的Linux发行版是CentOS 8.1.1911;</li>
-<li>本文使用的Zabbix版本为5.0.1;</li>
-<li>本文使用的Grafana版本为7.0.3;</li>
-</ol>
-</div>
-<p>首先，通过dnf安装Grafana：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dnf install https://dl.grafana.com/oss/release/grafana-7.0.3-1.x86_64.rpm -y</span><br></pre></td></tr></table></figure>
-
-<p>启动Grafana，并设置为开机自启：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">systemctl enable --now grafana-server</span><br></pre></td></tr></table></figure>
-
-<p>打开浏览器，通过<code>http://&lt;Host IP&gt;:3000</code>访问Grafana。Grafana的默认用户名和密码都是admin。初次登录的话，需要修改默认的管理员密码：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-12-27-06.png" alt="2020-06-06-12-27-06"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-12-28-29.png" alt="2020-06-06-12-28-29"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-12-28-51.png" alt="2020-06-06-12-28-51"></p>
-<h2 id="开始对接Zabbix"><a href="#开始对接Zabbix" class="headerlink" title="开始对接Zabbix"></a>开始对接Zabbix</h2><p>Grafana的插件种类比较丰富，通过Grafana-CLI就能安装各种类型的插件，安装过程比较简单。下面来安装Zabbix插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grafana-cli plugins install alexanderzobnin-zabbix-app </span><br></pre></td></tr></table></figure>
-<p>使用<code>systemctl restart grafana-server</code>重新启动Grafana服务。登录Grafana，点击右侧栏设置图标→插件，启用Zabbix插件：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-07-10-43-26.png" alt="2020-06-07-10-43-26"><br><img src="https://buff.tokiame.cn/hexo-images/2020-06-07-10-44-11.png" alt="2020-06-07-10-44-11"></p>
-<p>回到首页，添加数据源：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-06-09.png" alt="2020-06-06-15-06-09"></p>
-<p>选择刚刚安装的Zabbix插件，进行配置：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-06-53.png" alt="2020-06-06-15-06-53"></p>
-<p>配置数据源名称、Zabbix的API URL、Zabbix用户名和密码，随后点击Save&amp;Test保存配置并进行对接测试：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-18-23.png" alt="2020-06-06-15-18-23"></p>
-<p>对接成功：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-30-35.png" alt="2020-06-06-15-30-35"></p>
-<div class="note danger flat"><p><strong>踩坑：</strong><br>如果Zabbix的版本是5.x以前的，则API URL应该写成这种形式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://&lt;Zabbix IP&gt;/zabbix/api_jsonrpc.php</span><br></pre></td></tr></table></figure></div>
-
-<div class="note warning flat"><p><strong>注意：</strong><br>如果你的Zabbix采用Nginx作为Server，则API URL内的地址需与Nginx配置文件中的server_name一致，否则会造成对接失败：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-29-12.png" alt="2020-06-06-15-29-12"></p>
-</div>
-
-<h2 id="创建仪表板并使用Zabbix数据源"><a href="#创建仪表板并使用Zabbix数据源" class="headerlink" title="创建仪表板并使用Zabbix数据源"></a>创建仪表板并使用Zabbix数据源</h2><p>回到Grafana首页，创建一个仪表板：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-40-43.png" alt="2020-06-06-15-40-43"></p>
-<p>为仪表板添加一个面板：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-41-46.png" alt="2020-06-06-15-41-46"></p>
-<p>设置图表的各项参数，比如数据源、图表类型、图表数据等，设置比较简单且多样化，根据自己需要进行设置就好了：<br>（我的Zabbix已经事先添加了监控主机，所以这里可以直接获取到数据）<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-45-40.png" alt="2020-06-06-15-45-40"></p>
-<p>点击Apply应用设置，就能看到新建的面板了。点击仪表板右上角的保存图标，保存仪表板：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-55-15.png" alt="2020-06-06-15-55-15"></p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>利用Grafana，可以做出各种漂亮的面板、图表，方便我们对数据的解读（最重要的还是逼格高啊&#x2F;滑稽）。Grafana的可玩性还是比较高的，还有更多的功能需要我们自己去探索。</p>
-<h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><ol>
-<li>利用Grafana为Zabbix做Dashboard：<a href="https://www.jianshu.com/p/44498cc11a95">https://www.jianshu.com/p/44498cc11a95</a></li>
-<li>提升运维格调？Grafana整合Zabbix：<a href="https://mp.weixin.qq.com/s/6GGxZ1vKw9nLiSdWYqtjug">https://mp.weixin.qq.com/s/6GGxZ1vKw9nLiSdWYqtjug</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>搬砖随记</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-        <tag>运维</tag>
-        <tag>Linux</tag>
-        <tag>CentOS</tag>
-        <tag>监控</tag>
-        <tag>高逼格</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>拯救这场灾难——如何解决因误操作导致的VCSA连接丢失</title>
-    <url>/2020/05/30/%E6%8B%AF%E6%95%91%E8%BF%99%E5%9C%BA%E7%81%BE%E9%9A%BE%E2%80%94%E2%80%94%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E5%9B%A0%E8%AF%AF%E6%93%8D%E4%BD%9C%E5%AF%BC%E8%87%B4%E7%9A%84VCSA%E8%BF%9E%E6%8E%A5%E4%B8%A2%E5%A4%B1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="开始唠嗑…"><a href="#开始唠嗑…" class="headerlink" title="开始唠嗑…"></a>开始唠嗑…</h1><h2 id="因强迫症埋下祸根…"><a href="#因强迫症埋下祸根…" class="headerlink" title="因强迫症埋下祸根…"></a>因强迫症埋下祸根…</h2><p>昨天给部门的vSphere集群配置了分布式交换机（Distribute Switch），把所有虚拟机迁移到分布式端口组上了。好不容易把所有ESXi标准交换机（以下称vswitch0）的端口组删干净了，猛然发现：咋还有残留的端口组捏？！<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-43-51.png" alt="2020-05-30-17-43-51"><br>明明没有关联虚拟机，删又删不掉，看着又碍眼，干脆另起一个数据数据中心和群集，然后把所有ESXi节点重新转移过去！</p>
-<p>然而事实证明这个决定是错误的。当我想把其中一个ESXi节点迁移到新的数据中心和集群时，频繁出现“不支持此操作”“端口20正在使用中”之类的提示。这时才想起，ESXi节点上都运行着Distribute Switch，而且虚拟机都占用着Distribute Switch上的分布式端口组：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-44-59.png" alt="2020-05-30-17-44-59"><br>重新在vswitch0上创建标准端口组，然后把虚拟机迁移到vswitch0标准端口组，一场灾难从此拉开序幕…</p>
-<h2 id="灾难伊始"><a href="#灾难伊始" class="headerlink" title="灾难伊始"></a>灾难伊始</h2><p>一番操作以后，发现VCSA跟所有ESXi节点失去连接了。突然才想起，vswitch0的上行链路不是分配给Distribute Switch了吗？也就是说，此时新建的标准端口组根本就没有上行链路，而VCSA虚拟机恰好在这个ESXi节点上运行……<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-05-11.png" alt="2020-05-30-16-05-11"></p>
-<h1 id="拯救任务开始"><a href="#拯救任务开始" class="headerlink" title="拯救任务开始"></a>拯救任务开始</h1><h2 id="A计划：急速还原"><a href="#A计划：急速还原" class="headerlink" title="A计划：急速还原"></a>A计划：急速还原</h2><p>我还是太年轻了。<br>兴冲冲地登录了ESXi节点，找到VCSA虚拟机，然后编辑设置，把网络调回Distribute Switch的对应端口组，然后发现事情并不简单：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-11-05.png" alt="2020-05-30-16-11-05"><br>好吧，A计划宣告失败。</p>
-<div class="note danger flat"><p><strong>Tips：</strong><br>分布式交换机及其下属端口组只能由VCSA、vCenter进行配置！</p>
-</div>
-
-<h2 id="B计划：将计就计"><a href="#B计划：将计就计" class="headerlink" title="B计划：将计就计"></a>B计划：将计就计</h2><p>如果两台虚拟机处于同一个端口组、同一个网段，这两台虚拟机不久可以互访了吗？<br>So，我把ESXi上的一台空闲虚拟机网络适配器分配到和VCSA相同的标准端口组，配好IP，在虚拟机里面打开浏览器，输入VCSA的IP地址：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-18-39.png" alt="2020-05-30-16-18-39"></p>
-<p>emm…再访问底层管理页面（https:&#x2F;&#x2F;&lt;VCSA的IP地址&gt;:5480）看看：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-42-34.png" alt="2020-05-30-17-42-34"></p>
-<p>我很好，只是有点小自闭而已~<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-21-06.png" alt="2020-05-30-16-21-06"></p>
-<h2 id="C计划：重启大法"><a href="#C计划：重启大法" class="headerlink" title="C计划：重启大法"></a>C计划：重启大法</h2><p>软的不行，就来硬的！<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-26-28.png" alt="2020-05-30-16-26-28"><br>经过漫长的等待（大约过了三四分钟的亚子&#x3D; &#x3D;），终于重启完了。考虑到VCSA刚启动不久，可能有一些服务有警告或者根本没启动（汲取上一次事件的经验：戳这儿），于是我先登录到底层管理页面（https:&#x2F;&#x2F;&lt;VCSA的IP地址&gt;:5480）查看VCSA各方面的状态。无奈，还是老样子，登不进去…</p>
-<p>So，C计划宣布破产。<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-34-21.png" alt="2020-05-30-16-34-21"></p>
-<h2 id="D计划：另辟蹊径"><a href="#D计划：另辟蹊径" class="headerlink" title="D计划：另辟蹊径"></a>D计划：另辟蹊径</h2><p>我认为VCSA还是得设法连接到外网。<br>突然想起服务器有4个网口，2个被Distribute Switch占用了，剩下两个网口分别连接到两台IPSAN存储，并且有各自的虚拟交换机（vswitch1和vswitch2），其中第4个网口目前没在使用。那我把网口对端的交换机端口调到外网，在vswitch2上新建一个端口组分配给VCSA虚拟机网络适配器，不就可以实现外网访问了吗？</p>
-<ul>
-<li><p>配置对应的交换机端口为Trunk模式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[*CX110-Slot-2X]interface GE 3/1/2</span><br><span class="line">[*CX110-Slot-2X-GE3/1/2]port link-type trunk</span><br><span class="line">[*CX110-Slot-2X-GE3/1/2]port trunk allow-pass vlan all    /*临时配置，日常使用不建议允许所有VLAN通过*/</span><br><span class="line">[*CX110-Slot-2X-GE3/1/2]quit</span><br><span class="line">[*CX110-Slot-2X]commit</span><br><span class="line">[~CX110-Slot-2X]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在vswitch2上新建一个端口组:<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-57-02.png" alt="2020-05-30-16-57-02"></p>
-</li>
-<li><p>将VCSA的网络划分到该端口组：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-58-03.png" alt="2020-05-30-16-58-03"></p>
-</li>
-</ul>
-<p>经过以上的轮番骚操作以后，我终于可以放弃跑路的念头了：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-01-47.png" alt="2020-05-30-17-01-47"></p>
-<p>将VCSA虚拟机的网络适配器分配到分布式端口组：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-32-08.png" alt="2020-05-30-17-32-08"></p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><h2 id="教训"><a href="#教训" class="headerlink" title="教训"></a>教训</h2><p>这其实算得上是一次失败的网络割接了。割接前一定要做好万全的准备，包括各种任务计划、风险评估、应急预案等等，而不是说要等到割接过程中出现问题了，才去现场发挥，手忙脚乱，不知所措。</p>
-<h2 id="科普"><a href="#科普" class="headerlink" title="科普"></a>科普</h2><p>vSphere标准交换机和分布式交换机的区别：</p>
-<ul>
-<li><p>标准交换机：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-36-14.png" alt="2020-05-30-17-36-14"></p>
-</li>
-<li><p>分布式交换机：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-36-30.png" alt="2020-05-30-17-36-30"></p>
-</li>
-</ul>
-<p>参考链接：<a href="https://blog.51cto.com/13556019/2062018">https://blog.51cto.com/13556019/2062018</a></p>
-]]></content>
-      <categories>
-        <category>搬砖随记</category>
-      </categories>
-      <tags>
-        <tag>服务器</tag>
-        <tag>vSphere</tag>
-        <tag>故障</tag>
-        <tag>运维</tag>
-        <tag>踩坑</tag>
+        <tag>虚拟化</tag>
+        <tag>升级</tag>
       </tags>
   </entry>
   <entry>
@@ -714,6 +254,200 @@
         <tag>虚拟化</tag>
         <tag>桌面云</tag>
         <tag>华为</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P1-初识云计算</title>
+    <url>/2020/07/09/P1-%E5%88%9D%E8%AF%86%E4%BA%91%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>云计算作为近几年发展非常迅速的技术，已经成为各大应用的一个基础。那什么是云计算呢？</p>
+<h1 id="初识云计算"><a href="#初识云计算" class="headerlink" title="初识云计算"></a>初识云计算</h1><h2 id="何为云计算？"><a href="#何为云计算？" class="headerlink" title="何为云计算？"></a>何为云计算？</h2><p>美国国家标准与技术研究院（NIST）对云计算作出了定义：</p>
+<blockquote>
+<p>云计算是一个模型，这个模型可以方便地按需访问一个可配置的计算资源（例如，网络、服务器、存储设备、应用程序以及服务）的公共集。这些资源可以被迅速供应并释放，使得管理资源的工作量、与服务提供商的交互量减小到最低限度。</p>
+</blockquote>
+<p>通俗来讲，“云”指的是提供资源的网络，而“计算”则指的是一台或多台性能强大的计算机提供的计算服务（包括各种功能、资源等）。云计算通过网络，将大量的计算资源聚合起来，使用软件进行智能化管理，形成计算资源池，并向广大用户提供计算服务。云计算并非是一种全新的技术，而是一种以互联网为中心的全新的网络应用概念。</p>
+<h2 id="云计算的部署模式"><a href="#云计算的部署模式" class="headerlink" title="云计算的部署模式"></a>云计算的部署模式</h2><p>云计算常见的部署模式分为三种，分别是公有云、私有云、混合云。公有云由第三方服务提供商建设，供用户使用；私有云由用户自行建设，即资源建设者&#x3D;资源使用者；混合云则为私有云和公有云的混合体。而根据层级关系，云计算又分为多种服务模式，如下图：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-09-19-04-46.png" alt="2020-07-09-19-04-46"></p>
+<ol>
+<li><strong>IaaS（Infrastructure as a Service，基础设施即服务）</strong>，把IT基础设施作为服务提供给用户使用，典型代表为云服务器；</li>
+<li><strong>PaaS（Platform as a Service，平台即服务）</strong>，把IT基础设施上的平台作为服务提供给用户使用,如阿里云的RDS云数据库等；</li>
+<li><strong>SaaS（Software as a Service，软件即服务）</strong>，在IT基础设施的平台上部署应用软件，并将这些应用软件提供给用户使用。常见的SaaS产品有钉钉、企业微信、Office 365等。</li>
+</ol>
+<h2 id="为何需要云计算？"><a href="#为何需要云计算？" class="headerlink" title="为何需要云计算？"></a>为何需要云计算？</h2><p>云计算具有以下几个明显优势：</p>
+<ol>
+<li><strong>按需自助服务。</strong> 用户可以按需调配计算资源，例如云服务器使用时长、存储空间大小、网络带宽等性能配置，无需人为与服务提供商进行交互；</li>
+<li><strong>广泛的网络接入。</strong> 用户可以通过智能手机、个人电脑等标准的客户端平台，通过网络访问并使用云计算资源。</li>
+<li><strong>资源池化。</strong> 云计算使用多租户模型，划分为众多的云资源池，并将资源池分布到多个地域。用户无需知晓资源的具体位置，即可使用云计算资源；</li>
+<li><strong>快速弹性伸缩。</strong> 根据用户需求，云计算资源能够被快速、灵活地分配、下发、动态调整、回收；</li>
+<li><strong>服务可计量。</strong> 云计算能够根据算法，自动调整、优化云资源（例如CPU、内存、磁盘、带宽等）的使用，并对云资源进行实时监控、记录，为服务提供商和用户提供透明的服务使用状况。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>华为云计算</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P2-虚拟化技术概览</title>
+    <url>/2020/08/04/P2-%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF%E6%A6%82%E8%A7%88/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上一篇文章已经介绍了云计算的一些基础概念，让我们对云计算有了一定的了解。那么，云计算中强大的功能从何而来？它又是如何实现的呢？</p>
+<h1 id="虚拟化技术"><a href="#虚拟化技术" class="headerlink" title="虚拟化技术"></a>虚拟化技术</h1><h2 id="最初印象"><a href="#最初印象" class="headerlink" title="最初印象"></a>最初印象</h2><p>在日常生活中，我们可能已经听说过，或者说已经在使用虚拟化技术了，下图是我们日常使用非常广泛的一个虚拟机软件：VMware Workstation：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-04-16-11-10.png" alt="2020-08-04-16-11-10"><br>通俗的讲法就是，虚拟机可以在一台具备操作系统的物理机上，运行一台或多台和物理机一样具有操作系统的虚拟主机。这可能是我们最早对虚拟机的一个理解了。</p>
+<h2 id="虚拟化概念"><a href="#虚拟化概念" class="headerlink" title="虚拟化概念"></a>虚拟化概念</h2><p>在虚拟化中，我们需要了解一些重要的概念以及专业术语：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-15-43-52.png" alt="2020-08-11-15-43-52"><br><strong>OS：</strong>操作系统<br><strong>Guest OS：</strong>虚拟机操作系统<br><strong>Virtual Machine(VM)：</strong>虚拟机<br><strong>Hypervisor：</strong>虚拟化软件层&#x2F;虚拟机监视器（也称VMM，Virtual Machine Monitor）<br><strong>Host OS：</strong>运行在物理机之上的OS<br><strong>Host Machine：</strong>（主机）物理机</p>
+<p>在虚拟化中，OS必不可少。OS是Operating System的缩写，即操作系统。OS具有以下作用：</p>
+<ol>
+<li>接管硬件；</li>
+<li>调度和分配软硬件资源；</li>
+<li>为OS软件进行升级、补丁更新；</li>
+<li>对主机的生命周期进行管理；</li>
+<li>提供人机交互界面；</li>
+</ol>
+<h2 id="虚拟化特点"><a href="#虚拟化特点" class="headerlink" title="虚拟化特点"></a>虚拟化特点</h2><p><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-15-30-43.png" alt="2020-08-11-15-30-43"></p>
+<ol>
+<li><strong>分区：</strong>通过虚拟化技术，对主机资源（计算、存储、网络）进行逻辑划分；</li>
+<li><strong>隔离：</strong>虚拟化技术可以保证虚拟机跟虚拟机、虚拟机跟主机进行隔离。例如，某一台虚拟机宕机了或者进程未响应，并不会影响到主机或其他虚拟机的运行；</li>
+<li><strong>封装：</strong>虚拟机可以封装为文件，以文件的形式存在，便于虚拟机在不同的主机之间迁移；</li>
+<li><strong>独立：</strong>每个虚拟机都是独立个体；</li>
+</ol>
+<h2 id="虚拟化类型"><a href="#虚拟化类型" class="headerlink" title="虚拟化类型"></a>虚拟化类型</h2><p>根据硬件和虚拟化层的层级关系，虚拟化类型分为以下几种。这里我们来简单介绍一下：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-15-17-51.png" alt="2020-08-11-15-17-51"></p>
+<ol>
+<li><strong>I型</strong>：裸金属型虚拟化，直接在硬件上部署Hypervisor，在Hypervisor上运行虚拟机。典型代表有VMware ESXi、Citrix Xen、Hyper-v、KVM、FusionCompute（基于KVM）。I型虚拟化尽可能地使用所有的硬件资源，减少不必要的性能损耗，运行较为稳定。缺点是实现方式较为复杂，需要针对硬件和系统内核进行开发。</li>
+<li><strong>II型</strong>：宿主型虚拟化（也可称为寄居虚拟化），在硬件上部署HostOS，在HostOS上部署相关的应用软件实现虚拟化，可以理解为将Hypervisor寄生于HostOS上而实现的虚拟化技术。典型代表有VMware Workstation、VirtualBox。II型虚拟化也是我们日常在Windows平台上使用最广泛的虚拟化类型之一。通常，II型虚拟化是针对OS进行开发的，缺点是额外性能开销大。</li>
+<li><strong>操作系统虚拟化（应用级虚拟化）</strong>：一般指的是容器技术，流行的代表有LXC、Docker等；</li>
+<li><strong>混合虚拟化</strong>：通过嵌入到系统内核的虚拟化驱动模块，来实现虚拟化，典型代表是KVM。华为FusionCompute就是一套底层基于KVM的虚拟化软件；</li>
+</ol>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>新手可能会觉得这篇文章非常枯燥无味，这个很正常，本人也是这么熬过来的。毕竟理论是实践的基础，在搞懂了虚拟化的概念后，后续学习将会变得更加顺利。</p>
+]]></content>
+      <categories>
+        <category>华为云计算</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P3-计算虚拟化</title>
+    <url>/2020/08/05/P3-%E8%AE%A1%E7%AE%97%E8%99%9A%E6%8B%9F%E5%8C%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文将会在P2的基础上，对云计算中的重要组成部分——计算虚拟化，进行介绍。</p>
+<h1 id="计算虚拟化概述"><a href="#计算虚拟化概述" class="headerlink" title="计算虚拟化概述"></a>计算虚拟化概述</h1><p>定义：计算虚拟化通过虚拟化软件层（即Hypervisor或VMM），将物理服务器的硬件资源与上层应用进行解耦，形成统一的资源池，将资源弹性分配给逻辑隔离的虚拟机共享使用。</p>
+<h2 id="CPU虚拟化"><a href="#CPU虚拟化" class="headerlink" title="CPU虚拟化"></a>CPU虚拟化</h2><h3 id="CPU特权级别"><a href="#CPU特权级别" class="headerlink" title="CPU特权级别"></a>CPU特权级别</h3><p>在我们的计算机系统中，CPU被划分为几个特权级别，每个级别我们称之为Ring。通过划分Ring级别，可以对CPU进行访问控制。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-16-35-25.png" alt="2020-08-11-16-35-25"></p>
+<ul>
+<li><strong>Ring0：</strong>OS内核，处于特权指令级别，安全等级最高，一般只有操作系统才能执行，是内核态；</li>
+<li><strong>Ring1&#x2F;2：</strong>一般驱动程序，处于非特权指令级别；</li>
+<li><strong>Ring3：</strong>应用程序，处于非特权指令级别，是用户态；</li>
+</ul>
+<h3 id="CPU指令"><a href="#CPU指令" class="headerlink" title="CPU指令"></a>CPU指令</h3><p>说到特权级别，不得不提的一点是CPU指令。CPU指令即指挥机器工作的指示和命令，程序就是一系列按一定顺序排列的指令，执行程序的过程就是计算机的工作过程，而指令集就是CPU中用来计算和控制计算机系统的一套指令的集合。目前，CPU指令集分为两大阵营：<a href="https://baike.baidu.com/item/%E7%B2%BE%E7%AE%80%E6%8C%87%E4%BB%A4%E9%9B%86%E8%AE%A1%E7%AE%97%E6%9C%BA/661859?fromtitle=risc&fromid=62696&fr=aladdin">RISC指令集</a>和<a href="https://baike.baidu.com/item/%E5%A4%8D%E6%9D%82%E6%8C%87%E4%BB%A4%E9%9B%86%E8%AE%A1%E7%AE%97%E6%9C%BA/10307148?fromtitle=CISC&fromid=1189443&fr=aladdin">CISC指令集</a>。</p>
+<p>根据权限划分的不同，CPU指令又分为以下几种：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-16-36-18.png" alt="2020-08-11-16-36-18"></p>
+<ul>
+<li><strong>特权指令：</strong>可以对操作系统产生直接影响的指令，一般不直接提供给给用户使用，例如对系统资源进行管理与分配等；</li>
+<li><strong>非特权指令：</strong>一般的用户指令，不会对操作系统产生直接影响；</li>
+<li><strong>敏感指令：</strong>指的是操作特权资源的指令，如读写时钟、控制中断、修改内存页表、访问地址重定位系统，以及所有IO指令。个人觉得比较有意思的一点是，在RISC架构的主机中，所有敏感指令都属于特权指令，而在CISC架构中，敏感指令一部分属于特权指令，另一部分属于非特权指令。这将直接影响到虚拟化架构的划分。</li>
+</ul>
+<h2 id="CPU虚拟化实现方式"><a href="#CPU虚拟化实现方式" class="headerlink" title="CPU虚拟化实现方式"></a>CPU虚拟化实现方式</h2><h3 id="CPU虚拟化历史、架构"><a href="#CPU虚拟化历史、架构" class="headerlink" title="CPU虚拟化历史、架构"></a>CPU虚拟化历史、架构</h3><p>20世纪60年代中期，IBM在自家的大型机上实现了虚拟化技术，主要针对的是自家采用RISC架构的Power系列处理器。虚拟化后，GuestOS会运行在Ring1级别，我们称之为特权解除。此时，GuestOS并不知道自己运行于Hypervisor上，他认为自己是运行在真实硬件上的。所以GuestOS和HostOS一样，是可以在不经过Hypervisor的情况下，将非特权指令直接交由CPU执行的。那么特权指令呢？对于特权指令，Hypervisor会对它进行Trap→模拟后，再交由CPU执行。举个栗子，GuestOS执行了一条特权指令——关机，这条特权指令是敏感指令。Hypervisor捕获到了这条特权敏感指令以后，采取中断→Trap→模拟动作，实际上GuestOS关闭的是它虚拟机本身，而不会是物理主机，这样就保证了物理主机的安全性。</p>
+<p>而对于CISC架构的主机来说，RISC的虚拟化方式可能会带来一场灾难，为什么呢？我们知道，在CISC架构里面，敏感指令有一部分是特权指令，另一部分是非特权指令。也就是说，CISC的非特权指令里面，包含有敏感指令。再举个栗子，某天GuestOS执行了一条非特权指令——kill掉一个进程，这条指令是敏感指令，将会直接交给CPU执行。如果这条指令kill掉的是Hypervisor的关键进程，Hypervisor因此宕掉，就会影响到上层的虚拟机。想象一下，生产环境中的Hypervisor出现问题，导致Hypervisor上的所有的业务虚拟机受到牵连，导致业务中断，岂不是会造成重大的损失？</p>
+<p>针对以上问题，1999年，VMware推出了针对x86架构主机的虚拟化技术，即全虚拟化方案。</p>
+<h3 id="全虚拟化"><a href="#全虚拟化" class="headerlink" title="全虚拟化"></a>全虚拟化</h3><p>全虚拟化场景下，Hypervisor会主动扫描、捕获、翻译来自GuestOS的所有二进制代码，这个过程我们称之为二进制翻译（BT，Binary Translation）。当发现敏感指令和特权指令时，对指令进行二进制翻译后再交由CPU安全执行。然而，这种频繁的动作会加重Hypervisor的工作负担，消耗大量资源，导致性能下降，这是全虚拟化的一大短板。全虚拟化的代表性产品是VMware ESXi、KVM。</p>
+<h3 id="半虚拟化（准虚拟化）"><a href="#半虚拟化（准虚拟化）" class="headerlink" title="半虚拟化（准虚拟化）"></a>半虚拟化（准虚拟化）</h3><p>半虚拟化场景下，通过修改GuestOS，令GuestOS得知自己正处于Hypervisor之上。修改后的GuestOS会主动将非特权指令中的敏感指令进行替换,使敏感指令只能够作用于其虚拟机本身，从而防止对HostOS造成影响。此外，GuestOS还会通过Hypercall接口，主动将特权指令发送给Hypervisor，让Hypervisor对来自GuestOS的特权指令进行Trap→模拟后，交由CPU执行。半虚拟化大大减轻了Hypervisor的压力，相比于全虚拟化，半虚拟化性能更高。修改GuestOS的方法通常是在GuestOS中安装半虚拟化驱动。例如，VMware ESXi在GuestOS中部署VMtools、Citrix Xen在GuestOS中部署PV Drivers、QEMU-KVM通过安装virtio驱动，实现半虚拟化。QEMU-KVM半虚拟化会在后续的文章重点介绍。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-18-50-17.png" alt="2020-08-11-18-50-17"></p>
+<h3 id="硬件辅助虚拟化"><a href="#硬件辅助虚拟化" class="headerlink" title="硬件辅助虚拟化"></a>硬件辅助虚拟化</h3><p>目前，硬件辅助虚拟化分为两大阵营：Intel VT-x和AMD-v（SVM），均受到主流的虚拟化产品的支持。<br>以Intel VT-x为例，在硬件辅助虚拟化中，CPU被划分为root（根）模式和none root（非根）模式。虚拟化后，Ring0~3处于none root模式，而Hypervisor处于root模式。也就是说，GuestOS会运行在Ring0级别，这意味着GuestOS执行特权指令时，无需再经过Hypervisor的Hypercall接口进行Trap→模拟。而此时，由于采用了硬件辅助虚拟化技术，CPU能够明确区分来自GuestOS的特权指令和非特权指令，当CPU捕获到来自GuestOS的特权指令和敏感指令时，通过VMCALL调用Hypervisor，Hypervisor令GuestOS自动挂起并切换到Root模式，通过CPU执行特权指令和敏感指令，该过程叫VM Exit。为了让GuestOS执行非特权指令（不包含敏感指令），Hypervisor可以调用VMLaunch或VMResume指令切换到Non-root模式，将GuestOS的指令交由CPU执行，该过程叫VM Entry。AMD-v（SVM）提供的硬件辅助虚拟化功能与Intel VT-x大多相似，但是名称上可能有所出入，此处不作过多介绍。<br>硬件辅助虚拟化既解决了全虚拟化的系统开销与性能损耗，也避免了半虚拟化下修改GuestOS的兼容性问题，进一步解放了GuestOS。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-11-18-49-47.png" alt="2020-08-11-18-49-47"></p>
+<h1 id="内存虚拟化"><a href="#内存虚拟化" class="headerlink" title="内存虚拟化"></a>内存虚拟化</h1><h2 id="术语和概念"><a href="#术语和概念" class="headerlink" title="术语和概念"></a>术语和概念</h2><ul>
+<li>**HPA（Host Physical Address）:**主机物理地址</li>
+<li>**HVA（Host Virtual Address）:**主机虚拟地址</li>
+<li>**GPA（Guest Physical Address）:**虚拟机物理地址</li>
+<li>**GVA（Guest Virtual Address）:**虚拟机虚拟地址</li>
+</ul>
+<h2 id="内存使用原则"><a href="#内存使用原则" class="headerlink" title="内存使用原则"></a>内存使用原则</h2><p>内存使用时，必须遵循以下原则：</p>
+<ul>
+<li>使用内存的地址必定从0开始</li>
+<li>使用内存的地址必定是连续的</li>
+</ul>
+<p>OS内核使用内存是从0开始的。一个应用进程使用内存时，也必须是从0开始的。但是多个应用进程需要使用内存时，而内存却只有一个地址0，怎么办呢？</p>
+<p>其实，在一个OS里面，每个应用进程都有自己的一小段内存空间，即<strong>虚拟地址空间</strong>，由OS内核维持。而应用进程所使用的内存地址，我们称之为<strong>HVA</strong>。其与<strong>HPA</strong>保持着映射关系，保证每个应用进程都能正常使用内存，如图：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-13-43-39.png" alt="2020-08-12-13-43-39"><br>通过以上内容我们可以得出结论：一个OS需要使用内存，必须经过物理地址和虚拟地址。</p>
+<h2 id="内存虚拟化实现方式"><a href="#内存虚拟化实现方式" class="headerlink" title="内存虚拟化实现方式"></a>内存虚拟化实现方式</h2><p>和物理主机的OS一样，虚拟机的GuestOS需要使用内存，也必须经过物理地址和虚拟地址。而虚拟机的本质是HostOS上的一个进程，在虚拟化环境下，如何解决虚拟机的内存使用问题呢？</p>
+<p>这个时候就需要Hypervisor的介入了。Hypervisor在虚拟机和主机之间引入了一层新的地址——<strong>GPA</strong>。Hypervisor将主机非连续的地址映射成了连续的虚拟机物理地址，供虚拟机使用，从而满足了虚拟机使用内存的条件，如图：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-14-14-11.png" alt="2020-08-12-14-14-11"></p>
+<h1 id="I-x2F-O虚拟化"><a href="#I-x2F-O虚拟化" class="headerlink" title="I&#x2F;O虚拟化"></a>I&#x2F;O虚拟化</h1><p>I&#x2F;O指的是输入&#x2F;输出设备，相信大家都知道吧！一般来说，我们的硬盘、网卡等设备都属于I&#x2F;O设备。I&#x2F;O虚拟化将会在下一篇文章重点介绍。</p>
+<h2 id="IO模拟-IO全虚拟化"><a href="#IO模拟-IO全虚拟化" class="headerlink" title="IO模拟(IO全虚拟化)"></a>IO模拟(IO全虚拟化)</h2><p>完全使用Hypervisor来模拟虚拟机的I&#x2F;O请求，由Hypervisor主动捕获虚拟机的IO操作，然后将捕获的IO操作转发给硬件。这种虚拟化方式不需要对OS和驱动程序进行修改，因此这种方式对于多种虚拟化技术的可移植性和兼容性比较好，但是需要在GuestOS和Hypervisor之间频繁进行交互，性能很差（例如模拟键盘鼠标等常用硬件，通过焦点捕获，焦点被哪个主机捕获就被哪个主机使用）；</p>
+<h2 id="IO半虚拟化"><a href="#IO半虚拟化" class="headerlink" title="IO半虚拟化"></a>IO半虚拟化</h2><p>在GuestOS中部署一个前端驱动（也就是上文所讲的半虚拟化驱动），通过前端驱动，将GuestOS的IO请求主动发送给Hypervisor的后端驱动，适用于硬盘和网卡,性能高；</p>
+<h2 id="IO-through"><a href="#IO-through" class="headerlink" title="IO-through"></a>IO-through</h2><p>IO设备直通，也就是裸设备映射，直接将物理设备（如硬盘、网卡等）分配给虚拟机，但是需要硬件支持（在Xen下由Dom0分配，但是访问使用直接使用,不经过Dom0，需要硬件支持）。</p>
+]]></content>
+      <categories>
+        <category>华为云计算</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P4-揭秘FusionCompute的核心技术——Xen与KVM</title>
+    <url>/2020/08/12/P4-%E6%8F%AD%E7%A7%98FusionCompute%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Xen%E4%B8%8EKVM/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Xen和KVM都是开源的虚拟化软件，同时它们也是FusionCompute所采用的底层架构。为了方便我们后续对FusionCompute的学习，有必要对Xen和KVM进行初步理解。</p>
+<h1 id="Xen-vs-KVM"><a href="#Xen-vs-KVM" class="headerlink" title="Xen vs KVM"></a>Xen vs KVM</h1><h2 id="Xen"><a href="#Xen" class="headerlink" title="Xen"></a>Xen</h2><p>Xen的虚拟化架构如下：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-15-51-55.png" alt="2020-08-12-15-51-55"><br>在Xen架构中，有两类虚拟机：Domain 0和Domain U。<br><strong>Domain 0：</strong>属于控制域，是一台启动优先级最高、处于特权级别的虚拟机，用于对Domain U进行管理。全虚拟化场景下，Xen负责DomainU的CPU虚拟化和内存虚拟化，而Domain 0的后端驱动会主动捕获Domain U的I&#x2F;O操作，通过硬件驱动去实现I&#x2F;O虚拟化。而在半虚拟化场景下，Domain U的前端驱动可以主动将I&#x2F;O请求发送给Domain 0的后端驱动，Domain 0通过硬件驱动直接访问硬件资源，实现I&#x2F;O虚拟化。可以这么说，Domain 0全权负责Domian U的I&#x2F;O虚拟化。<br><strong>Domain U：</strong>普通的用户虚拟机</p>
+<h2 id="KVM"><a href="#KVM" class="headerlink" title="KVM"></a>KVM</h2><p>KVM，全称Kernel-based Virtual Machine，意为“基于内核的虚拟机”。KVM的虚拟化架构如下：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-16-24-43.png" alt="2020-08-12-16-24-43"><br>如今，QEMU-KVM一般都会统称为KVM，因为作者已经把QEMU集成到KVM模块中了。其中，QEMU是一个开源的纯虚拟化软件，运行在用户态，主要负责I&#x2F;O虚拟化。而KVM是一个内核驱动模块，运行在内核态，负责虚拟机的CPU虚拟化和内存虚拟化。</p>
+<h1 id="KVM体系架构"><a href="#KVM体系架构" class="headerlink" title="KVM体系架构"></a>KVM体系架构</h1><p>下图是一个基本的KVM体系架构：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-16-53-27.png" alt="2020-08-12-16-53-27"><br>其中，Libvirt是一个开源的API库，支持C、Python、Go、Java等编程语言。另外，它几乎支持所有主流的虚拟化环境，如VMware ESXi、KVM、Hyper-v、Xen等，在云计算解决方案中使用最为广泛。在KVM中，上层的管理工具都会通过Libvirt，对KVM虚拟化环境进行统一调度、分配。运行时，Libvirt作为一个守护进程驻留在系统后台。</p>
+<h2 id="KVM的IO操作流程"><a href="#KVM的IO操作流程" class="headerlink" title="KVM的IO操作流程"></a>KVM的IO操作流程</h2><h3 id="全虚拟化（默认）"><a href="#全虚拟化（默认）" class="headerlink" title="全虚拟化（默认）"></a>全虚拟化（默认）</h3><p><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-18-02-15.png" alt="2020-08-12-18-02-15"></p>
+<ul>
+<li>1-2：KVM主动捕获GuestOS的IO请求；</li>
+<li>3：KVM模块将GuestOS的IO请求发送到IO共享页，并通知QEMU到IO共享页读取；</li>
+<li>4：QEMU收到通知，并从IO共享页读取GuestOS的IO请求；</li>
+<li>5-6：QEMU通过设备驱动，将IO请求交由硬件进行模拟执行；</li>
+<li>7：执行完毕后，QEMU将IO执行结果返回到到IO共享页，并通知KVM模块到IO共享页进行读取；</li>
+<li>8：KVM模块收到通知，并从IO共享页读取GuestOS的IO操作结果；</li>
+<li>9-10：KVM模块将IO操作结果返回给GuestOS。</li>
+</ul>
+<p><strong>缺点：采用同步机制，GuestOS需要主动等待KVM模块将IO共享页中的IO操作结果返回以后，才能继续发送下一条IO操作（即阻塞），性能差。</strong></p>
+<h3 id="半虚拟化（使用virtio驱动）"><a href="#半虚拟化（使用virtio驱动）" class="headerlink" title="半虚拟化（使用virtio驱动）"></a>半虚拟化（使用virtio驱动）</h3><p><img src="https://buff.tokiame.cn/hexo-images/2020-08-12-18-02-32.png" alt="2020-08-12-18-02-32"><br><strong>特点：前端驱动部署在GuestOS上，后端驱动部署在QEMU上。</strong></p>
+<ul>
+<li>1-2：GuestOS主动将IO请求通过virtio前端驱动发送到virtio-ring（virtio的IO共享环），并通知QEMU到virtio-ring进行捕获；</li>
+<li>3：QEMU收到通知，并通过virtio后端驱动从virtio-ring读取GuestOS的IO请求；</li>
+<li>4-5：QEMU通过设备驱动，将IO请求交由硬件进行模拟执行；</li>
+<li>6：执行完毕后，QEMU将IO执行结果返回到virtio-ring，并通知KVM模块到virtio-ring进行读取；</li>
+<li>7：KVM模块收到通知，并从virtio-ring读取GuestOS的IO操作结果；</li>
+<li>8：KVM模块将IO操作结果返回给GuestOS。</li>
+</ul>
+<p><strong>特点：采用异步机制，GuestOS将IO请求批量发送到virtio-ring而无需等待，供QEMU的virtio后端驱动批量读取执行，而GuestOS无需等待执行可以批量从virtio-ring中读取IO操作结果（非阻塞），大幅提升了性能。</strong></p>
+]]></content>
+      <categories>
+        <category>华为云计算</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P5-存储虚拟化</title>
+    <url>/2020/08/17/P5-%E5%AD%98%E5%82%A8%E8%99%9A%E6%8B%9F%E5%8C%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>说到存储，可能大多数人首先想到的是硬盘、U盘，然而这些都只是冰山一角。在虚拟化领域，存储是以什么样的形式存在的呢？</p>
+<h1 id="存储介质：硬盘"><a href="#存储介质：硬盘" class="headerlink" title="存储介质：硬盘"></a>存储介质：硬盘</h1><p>存储介质种类繁多。在虚拟化领域，硬盘的使用非常广泛，下面会重点介绍硬盘的分类。</p>
+<h2 id="根据接口进行划分"><a href="#根据接口进行划分" class="headerlink" title="根据接口进行划分"></a>根据接口进行划分</h2><ol>
+<li><p><strong>IDE硬盘：</strong>也称为并口硬盘、ATA硬盘，采用并行传输模式。然而线缆数量过多，难以实现高速率。理论上，提高工作频率可以使传输速率更高，但由于线缆数量多，提高工作频率会导致线路间产生串扰，传输距离变短。目前，这种硬盘已经不再生产，面临淘汰。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-06-00.png" alt="2020-08-23-21-06-00"></p>
+</li>
+<li><p><strong>SATA硬盘：</strong>也称为串口硬盘，采用串行传输方式，线缆数量少，容易达到较高的传输速率，且传输距离长。SATA硬盘采用了嵌入式时钟信号，能够同时对数据、传输指令进行检查，纠错能力强，可靠性高。SATA硬盘还支持热插拔，维护较为方便。目前，在消费级硬盘领域，SATA硬盘的使用非常广泛。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-06-20.png" alt="2020-08-23-21-06-20"></p>
+</li>
+<li><p><strong>SAS硬盘：</strong>即串行SCSI硬盘，采用SAS接口。SAS接口是向下兼容SATA接口的，但是和SATA接口不一样的是，它支持串行SCSI协议（SSP）、SCSI管理协议（SSP），且额外提供了冗余传输端口（位于供电接口和数据接口之间的补平部分），可以连接到备用的SAS控制器上，可靠性更高。目前还有一种采用SAS接口、SATA盘体的NL-SAS硬盘，转速较低，但价格比SAS硬盘稍低。SAS硬盘被广泛应用于高可靠性要求的领域，例如服务器。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-07-48.png" alt="2020-08-23-21-07-48"></p>
+</li>
+</ol>
+<h2 id="根据存储构造进行划分"><a href="#根据存储构造进行划分" class="headerlink" title="根据存储构造进行划分"></a>根据存储构造进行划分</h2><ol>
+<li><p><strong>HDD：</strong>Hard Disk Driver，即硬盘驱动器，存储单元采用的是机械结构（磁头+磁盘），通过电磁流改变磁盘极性，将数据写到磁盘上，读取数据时采用相反方式。自1973年IBM发明了硬盘以来，机械硬盘的核心结构部分始终没有脱离“温彻斯特”模式：在密封、固定并高速旋转的镀磁盘片的每个盘片上，磁头通过沿盘片径向移动进行数据读写操作。这种磁盘容易实现大容量，且价格较为低廉。缺点是读写速率较低，容易受到外力损坏，且功耗较大。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-20-54-30.png" alt="2020-08-23-20-54-30"></p>
+</li>
+<li><p><strong>SSD：</strong>Solid State Drive，即固态驱动器，存储单元采用的是电子结构（NAND Flash芯片），通过在芯片内部进行电子的充电、感应、擦除实现数据读写。SSD在持续写入、随机读写方面性能非常优秀。这种磁盘质量较轻，且功耗低、发热量小，几乎不存在物理损坏，且读写速率高。缺点是使用寿命有限，相对于机械硬盘，SSD价格更高。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-20-22-03.png" alt="2020-08-23-20-22-03"></p>
+</li>
+</ol>
+<h1 id="常见的三大存储类型"><a href="#常见的三大存储类型" class="headerlink" title="常见的三大存储类型"></a>常见的三大存储类型</h1><h2 id="NAS"><a href="#NAS" class="headerlink" title="NAS"></a>NAS</h2><p><strong>NAS</strong>即Network Attached Storage，网络附加存储，通过网络实现存储空间共享，以文件系统的形式将存储提供给主机使用。NAS为实现共享而生，部署方式简单，扩展性强，且传输距离长。然而其存储性能依赖于存储设备、网络带宽，性能相对较低；<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-01-45.png" alt="2020-08-23-21-01-45"></p>
+<h2 id="DAS"><a href="#DAS" class="headerlink" title="DAS"></a>DAS</h2><p><strong>DAS</strong>即Direct-attached Storage，直连式存储，与主机总线直连，如硬盘、U盘。这种存储的实现方式最简单，性能比NAS更优。缺点是对主机资源消耗较高，扩展性差（取决于主机存储接口数量），且传输距离有限，不利于共享；<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-04-51.png" alt="2020-08-23-21-04-51"></p>
+<h2 id="SAN"><a href="#SAN" class="headerlink" title="SAN"></a>SAN</h2><p><strong>SAN</strong>即Storage Area Network，存储区域网络。主机通过交换机和存储设备连接，建立存储网络，以块的形式将存储提供给主机使用。共享，支持距离长，性能高。缺点是构造比较复杂，造价昂贵，通常部署在企业、单位等对存储要求较高的环境。<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-23-21-03-15.png" alt="2020-08-23-21-03-15"></p>
+<p>根据传输介质和传输协议的不同，SAN又分为IP SAN和FC SAN，下图是它们两者之间的区别：<br><img src="https://buff.tokiame.cn/hexo-images/2020-08-22-22-10-04.png" alt="2020-08-22-22-10-04"></p>
+<h1 id="虚拟化存储基础"><a href="#虚拟化存储基础" class="headerlink" title="虚拟化存储基础"></a>虚拟化存储基础</h1><h2 id="磁盘基本概念"><a href="#磁盘基本概念" class="headerlink" title="磁盘基本概念"></a>磁盘基本概念</h2><p><strong>Pool：</strong>存储池，可以看作一个容器，承载的是存储空间；<br><strong>Volume：</strong>卷，是存储系统的内部管理对象，是对存储系统本身而言的；<br><strong>LUN：</strong>逻辑单元号，可以直接映射给主机使用，是Volume对象的对外体现；</p>
+<h2 id="虚拟磁盘置备模式"><a href="#虚拟磁盘置备模式" class="headerlink" title="虚拟磁盘置备模式"></a>虚拟磁盘置备模式</h2><p><strong>1. 普通延迟置零：</strong>创建虚拟磁盘后分配空间但不置零，在VM需要对磁盘进行I&#x2F;O操作时，对虚拟磁盘进行置零，即边写入边置零。这种磁盘性能适中，空间利用率较高，创建时间比较短，适用于一般业务的虚拟机；<br><strong>2. 普通：</strong>创建虚拟磁盘后分配空间并进行置零。这种虚拟磁盘性能最佳，但创建时间也更长，适用于业务繁重、对磁盘I&#x2F;O要求较高的虚拟机；<br><strong>3. 精简：</strong>在创建虚拟磁盘后，不分配空间也不置零，在VM需要对磁盘进行I&#x2F;O操作时对虚拟磁盘分配空间、写入数据并置零，即边分配空间边写入边置零。这种磁盘创建时间最短，空间利用率也高，但在虚拟机I&#x2F;O操作频繁时性能较差，适用于对I&#x2F;O要求较低的业务虚拟机。</p>
+<h2 id="虚拟磁盘模式"><a href="#虚拟磁盘模式" class="headerlink" title="虚拟磁盘模式"></a>虚拟磁盘模式</h2><p><strong>1. 从属：</strong>快照中包含该从属磁盘。<br><strong>2. 独立-持久：</strong>对数据的更改将立即永久写入磁盘。虚拟机创建快照时，不会对该磁盘的数据进行快照，因而不受快照影响。使用快照还原虚拟机时，也不会对该磁盘的数据进行还原。<br><strong>3. 独立-非持久：</strong>虚拟机关闭电源或恢复快照后，对磁盘的更改将被丢弃。</p>
+<h2 id="华为虚拟化中的存储模型"><a href="#华为虚拟化中的存储模型" class="headerlink" title="华为虚拟化中的存储模型"></a>华为虚拟化中的存储模型</h2><ol>
+<li><strong>存储资源：</strong>指的是物理存储设备，表示存储的位置。例如SAN、NAS、FusionStorage、Advanced SAN；</li>
+<li><strong>存储设备：</strong>指的是存储资源中管理单元，表示存储空间。例如LUN、共享目录、存储池、本地磁盘等；</li>
+<li><strong>数据存储：</strong>一个可管理、可操作的逻辑管理单元，处于存储设备之上，与存储设备相对应，用于承载虚拟机业务。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>华为云计算</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
       </tags>
   </entry>
   <entry>
@@ -877,6 +611,119 @@
         <tag>华为</tag>
         <tag>云计算</tag>
         <tag>CentOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Diskpart优雅地管理你的磁盘分区</title>
+    <url>/2021/05/27/%E4%BD%BF%E7%94%A8Diskpart%E4%BC%98%E9%9B%85%E5%9C%B0%E7%AE%A1%E7%90%86%E4%BD%A0%E7%9A%84%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><del>强迫症（OCD）属于焦虑障碍的一种类型，是一组以强迫思维和强迫行为为主要临床表现的神经精神疾病，其特点为有意识的强迫和反强迫并存，一些毫无意义、甚至违背自己意愿的想法或冲动反反复复侵入患者的日常生活。患者虽体验到这些想法或冲动是来源于自身，极力抵抗，但始终无法控制，二者强烈的冲突使其感到巨大的焦虑和痛苦，影响学习工作、人际交往甚至生活起居。</del><br>我们每次在虚拟机上安装Windows，设置Windows安装位置的时候，都会提示“Windows可能要为系统文件创建额外的分区”。这样安装的话会默认创建EFI（存放EFI引导文件）、MSR（保留分区）和主分区，强迫症表示非常不爽。撇开强迫症不说，如果需要扩展磁盘空间，有个MSR分区卡在中间的话，根本没法进行在线扩容，需要进入Windows PE利用分区软件来进行扩容，带来极大的不便。我们可以利用Windows安装镜像自带的Diskpart工具，亲手进行磁盘分区。</p>
+<h1 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h1><h2 id="环境介绍"><a href="#环境介绍" class="headerlink" title="环境介绍"></a>环境介绍</h2><ul>
+<li>系统镜像文件：Windows Server 2019镜像文件</li>
+<li>虚拟化平台：VMware vSphere 7.0u2</li>
+<li>一台能上网的破笔记本</li>
+<li>一位懂电脑并且会用vSphere的靓仔or靓女&#x2F;滑稽</li>
+</ul>
+<h2 id="安装伊始"><a href="#安装伊始" class="headerlink" title="安装伊始"></a>安装伊始</h2><p>照常创建虚拟机，挂载Windows安装镜像，一路来到Windows安装界面：<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-18-16-22.png" alt="2021-05-27-18-16-22"></p>
+<p>点击下一步→修复计算机：<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-00-45.png" alt="2021-05-27-19-00-45"></p>
+<p>依次点击疑难解答→命令提示符，进入命令行界面。没错，就是喜闻乐见的cmd：<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-01-49.png" alt="2021-05-27-19-01-49"><br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-01-59.png" alt="2021-05-27-19-01-59"></p>
+<p>输入diskpart运行磁盘管理工具。<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-04-10.png" alt="2021-05-27-19-04-10"></p>
+<p>diskpart提供了比较丰富的磁盘管理功能，可以实现磁盘的初始化、分区新建、格式化、删除等功能。如果不熟悉diskpart，可以输入<code>help</code>显示帮助信息。</p>
+<p>如图，使用<code>list disk</code>列出所有磁盘，然后根据返回的信息，输入<code>select disk 0</code>选中需要操作的磁盘:<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-08-31.png" alt="2021-05-27-19-08-31"></p>
+<p>由于采用UEFI引导方式，故需要将磁盘初始化为GPT格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DISKPART&gt;convert gpt</span><br><span class="line">DiskPart 已将所选磁盘成功地转换为 GPT 格式。</span><br></pre></td></tr></table></figure>
+
+<p>创建一个大小为512MB的EFI分区：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DISKPART&gt;create partition efi size=512</span><br><span class="line">DiskPart 成功地创建了指定分区。</span><br></pre></td></tr></table></figure>
+
+<p>再创建一个主分区，用于安装操作系统（如果不指定分区大小，将会使用所有剩余空间来创建分区）：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">DISKPART&gt;create partition primary</span><br><span class="line">DiskPart 成功地创建了指定分区。</span><br></pre></td></tr></table></figure>
+
+<p>输入<code>list partition</code>，列出所有分区，确保无误：<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-18-41.png" alt="2021-05-27-19-18-41"></p>
+<p>输入<code>exit</code>退出Diskpart，然后输入<code>setup.exe</code>，重新进入安装程序。</p>
+<h2 id="后续步骤"><a href="#后续步骤" class="headerlink" title="后续步骤"></a>后续步骤</h2><p>像往常一样正常安装Windows即可。<br><img src="https://buff.tokiame.cn/hexo-images/2021-05-27-19-22-18.png" alt="2021-05-27-19-22-18"></p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://baike.baidu.com/item/diskpart/2340530?fr=aladdin#6">https://baike.baidu.com/item/diskpart/2340530?fr=aladdin#6</a><br><a href="https://www.jianshu.com/p/8d63abf6a2b1">https://www.jianshu.com/p/8d63abf6a2b1</a></p>
+]]></content>
+      <categories>
+        <category>瞎折腾</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+        <tag>运维</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Kickstart+PXE批量部署Linux操作系统.md</title>
+    <url>/2020/07/06/%E4%BD%BF%E7%94%A8Kickstart%E3%80%81PXE%E6%89%B9%E9%87%8F%E9%83%A8%E7%BD%B2Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>相信大家都知道该怎么去安装Linux操作系统了，无非是通过U盘、光驱来安装，家里有矿的伙计已经开始用服务器BMC的远程控制台来安装操作系统了。但是！如果在一个生产环境里面，有成百上千台服务器正等着你去部署操作系统，如果仍然采用以上的方法来部署操作系统，大量重复、繁琐且毫无技术可言的操作将会使你身心疲惫，甚至逐步起了杀心（别问我怎么知道的）。</p>
+<p>都0202年了，你们还会用传统方法给生产环境来部署操作系统吗？</p>
+<h1 id="关于无人值守安装"><a href="#关于无人值守安装" class="headerlink" title="关于无人值守安装"></a>关于无人值守安装</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>无人值守安装(Unattended Setup)是指软件安装时无需任何用户干预，直接按默认或通过应答文件设置安装，这对于无特殊需求的用户或企业大批量部署安装操作系统及软件时非常方便。<br>——引自<a href="https://baike.baidu.com/item/%E6%97%A0%E4%BA%BA%E5%80%BC%E5%AE%88%E5%AE%89%E8%A3%85/4253153?fr=aladdin">百度百科</a>。</p>
+</blockquote>
+<p>以前用过Ghost版系统的童鞋应该会知道，在安装Windows时，几乎不需要我们去设置安装系统的各种参数，这其实也算是无人值守安装的一种了。而本文给大家介绍的无人值守安装，是针对一个拥有成百上千台服务器的生产环境而言的，具体介绍请继续往下看。</p>
+<h2 id="所需技术"><a href="#所需技术" class="headerlink" title="所需技术"></a>所需技术</h2><p><strong>1. PXE</strong><br>PXE不是一种安装方式，而是一种引导的方式。计算机可以通过PXE，从网络进行操作系统引导。PXE需要配合TFTP和DHCP使用。</p>
+<p><strong>2. DHCP</strong><br>DHCP相信大家都不陌生，它的作用是为网络上的每台主机动态分配可用的IP地址。在一个局域网内，两台计算机要实现文件传输，IP地址是必不可少的。这也就不难理解，为何在PXE安装中需要用到DHCP服务了。</p>
+<p><strong>3. TFTP</strong><br>同样是文件传输协议，和FTP不一样的是，TFTP免去了用户认证等功能，基于UDP进行文件传输，且不支持交互。在PXE安装时，会自动加载PXE ROM中的TFTP客户端，从远程服务器获取所需的驱动和引导文件。</p>
+<h1 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h1><p><strong>实验环境：</strong></p>
+<ol>
+<li>两台主机，一台作为Server，安装CentOS7；另一台作为Client，不安装操作系统；</li>
+<li>CentOS 7安装镜像；</li>
+<li>确保两台主机在同一网段，且<strong>必须保证该网段内没有其他DHCP服务器的干扰</strong>！</li>
+</ol>
+<h2 id="安装配置DHCP服务"><a href="#安装配置DHCP服务" class="headerlink" title="安装配置DHCP服务"></a>安装配置DHCP服务</h2><p>安装DHCP服务：<code>yum install dhcp -y</code><br>编辑DHCP配置文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /etc/dhcp/dhcpd.conf</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">allow booting;  /*允许引导*/</span><br><span class="line">allow bootp;    /*允许BOOTP协议，使局域网内没有操作系统的主机也能获取IP地址*/</span><br><span class="line">ddns-update-style interim;</span><br><span class="line">ignore client-updates;</span><br><span class="line">subnet 192.168.100.0 netmask 255.255.255.0 &#123;    /*声明一个子网网段*/</span><br><span class="line">        option subnet-mask      255.255.255.0;  /*子网掩码*/</span><br><span class="line">        range dynamic-bootp 192.168.100.101 192.168.100.200;    /*IP地址分配范围*/</span><br><span class="line">        default-lease-time      21600;      /*默认地址租期*/</span><br><span class="line">        max-lease-time          43200;      /*最大地址租期*/</span><br><span class="line">        next-server             192.168.100.100;    /*指定一台PXE引导服务器*/</span><br><span class="line">        filename                <span class="string">&quot;pxelinux.0&quot;</span>;   /*加载引导驱动文件pxelinux.0*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>PS：如果需要跨多个子网分配IP地址，则还需要为网卡添加相应的子网IP，否则DHCP服务器将无法启动！</p>
+<h2 id="安装FTP服务"><a href="#安装FTP服务" class="headerlink" title="安装FTP服务"></a>安装FTP服务</h2><p>文章将使用HTTP作为Linux操作系统的安装源。安装Apache：<code>yum install vsftpd -y</code></p>
+<p>挂载CentOS7安装镜像到<code>/var/ftp/CentOS_7.2.1511</code>目录下:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /var/ftp/CentOS_7.2.1511</span><br><span class="line">mount /dev/sr0 /var/ftp/CentOS_7.2.1511</span><br></pre></td></tr></table></figure>
+<p>启动FTP服务,并设置为开机自启：<code>systemctl enable --now vsftpd</code></p>
+<h2 id="安装配置TFTP服务"><a href="#安装配置TFTP服务" class="headerlink" title="安装配置TFTP服务"></a>安装配置TFTP服务</h2><p>安装DHCP服务：<code>yum install tftp-server xinetd -y</code><br>编辑TFTP配置文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /etc/xinetd.d/tftp</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">service tftp</span><br><span class="line">&#123;</span><br><span class="line">        socket_type             = dgram</span><br><span class="line">        protocol                = udp</span><br><span class="line">        <span class="built_in">wait</span>                    = <span class="built_in">yes</span></span><br><span class="line">        user                    = root</span><br><span class="line">        server                  = /usr/sbin/in.tftpd</span><br><span class="line">        server_args             = -s /var/lib/tftpboot</span><br><span class="line">        <span class="built_in">disable</span>                 = no    /*默认为<span class="built_in">yes</span>，此处改为no*/</span><br><span class="line">        per_source              = 11</span><br><span class="line">        cps                     = 100 2</span><br><span class="line">        flags                   = IPv4</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="准备好引导所需文件"><a href="#准备好引导所需文件" class="headerlink" title="准备好引导所需文件"></a>准备好引导所需文件</h2><h3 id="SYSLinux"><a href="#SYSLinux" class="headerlink" title="SYSLinux"></a>SYSLinux</h3><p>SYSLinux是一个用于提供引导加载的服务程序，此处我们只需用到它里面的引导文件。安装SYSLinux软件包：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install syslinux -y</span><br></pre></td></tr></table></figure>
+
+<p>将一些必备的引导文件复制到<code>/var/lib/tftpboot/</code>目录下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> /var/ftp/CentOS_7.2.1511/syslinux/pxelinux.0 /var/lib/tftpboot/</span><br><span class="line"><span class="built_in">cp</span> /var/ftp/CentOS_7.2.1511/images/pxeboot/&#123;vmlinuz,initrd.img&#125; /var/lib/tftpboot/</span><br><span class="line"><span class="built_in">cp</span> /var/ftp/CentOS_7.2.1511/isolinux/&#123;vesamenu.c32,boot.msg&#125; /var/lib/tftpboot/</span><br></pre></td></tr></table></figure>
+
+<h3 id="Kickstart自动应答文件"><a href="#Kickstart自动应答文件" class="headerlink" title="Kickstart自动应答文件"></a>Kickstart自动应答文件</h3><p>自动应答文件可以在PXE安装操作系统时，帮助我们自动设置系统安装参数（包括网络配置、磁盘、密码等），减少人机交互。在Linux完成安装后，会在home目录下自动生成一个应答文件anaconda-ks.cfg，我们现在可以将这个应答文件利用起来。将anaconda-ks.cfg复制到<code>/var/ftp/Kickstart/</code>目录下，并重命名为CentOS.cfg：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /var/ftp/kickstart</span><br><span class="line"><span class="built_in">cp</span> ~/anaconda-ks.cfg /var/ftp/Kickstart/CentOS.cfg</span><br><span class="line"><span class="built_in">chmod</span> +r /var/ftp/Kickstart/CentOS.cfg  /*赋予执行权限*/</span><br></pre></td></tr></table></figure>
+<p>按需修改应答文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /var/ftp/Kickstart/CentOS.cfg</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">......</span><br><span class="line">url --url=ftp://192.168.100.100/CentOS_7.2.1511    /*默认为CDROM，此处改为FTP安装源路径*/</span><br></pre></td></tr></table></figure>
+<div class="note info flat"><p><strong>提示！</strong><br>如果有图形界面，还可以安装system-config-kickstart，来进一步定制Kickstart！</p>
+</div>
+<h3 id="引导菜单文件"><a href="#引导菜单文件" class="headerlink" title="引导菜单文件"></a>引导菜单文件</h3><p>在tftpboot下新建一个目录pxelinux.cfg（是目录不是文件！）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /var/lib/tftpboot/pxelinux.cfg</span><br></pre></td></tr></table></figure>
+
+<p>将启动菜单配置文件复制到pxelinux.cfg目录下，并重命名为default：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> /var/ftp/CentOS_7.2.1511/isolinux/isolinux.cfg /var/lib/tftpboot/pxelinux.cfg/default</span><br></pre></td></tr></table></figure>
+
+<p>修改启动菜单，将linux作为默认引导项，系统安装形式改为http协议：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vim /var/lib/tftpboot/pxelinux.cfg/default</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">default linux    /*默认为vesamenu.c32，此处改为linux*/</span><br><span class="line">......</span><br><span class="line">label linux</span><br><span class="line">  menu label ^Install CentOS 7</span><br><span class="line">  kernel vmlinuz</span><br><span class="line">  append initrd=initrd.img inst.stage2=ftp://192.168.100.100/CentOS_7.2.1511/ ks=ftp://192.168.100.100/Kickstart/CentOS.cfg</span><br><span class="line">  /*默认安装源为本地光盘路径。本文安装源使用的是ftp，此处改为安装源的URL*/</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<h2 id="最后阶段"><a href="#最后阶段" class="headerlink" title="最后阶段"></a>最后阶段</h2><p>启动所有服务：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> --now dhcpd xinetd vsftpd</span><br></pre></td></tr></table></figure>
+<p>配置防火墙，放行TFTP、FTP所需端口：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">firewall-cmd --permanent --add-port=69/udp</span><br><span class="line">firewall-cmd --permanent --add-service=ftp</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+<p>设置SELinux为宽松模式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">setenforce 0</span><br><span class="line">sed -i <span class="string">&#x27;s/enforcing/permissive/g&#x27;</span> /etc/selinux/config</span><br></pre></td></tr></table></figure>
+
+<h1 id="客户机测试"><a href="#客户机测试" class="headerlink" title="客户机测试"></a>客户机测试</h1><p>打开虚拟机电源。由于未安装操作系统，虚拟机将会自动从网络进行引导：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-06-15-47-57.png" alt="2020-07-06-15-47-57"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-06-15-48-38.png" alt="2020-07-06-15-48-38"></p>
+<p>当出现下图所示界面以后，说明无人值守安装的基本配置已经成功，此时像往常一样进行系统安装操作即可：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-06-16-03-02.png" alt="2020-07-06-16-03-02"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>本文实现的无人值守安装只能算是半自动化部署方式，因为在安装过程中，还需要对安装的主机进行一些参数设置。在实际生产环境下，还需要根据服务器的硬件配置（例如磁盘容量等），来定制应答文件。总之，通过Kickstart+PXE批量部署操作系统，不仅能够将运维人员从重复性的工作中解放出来，还能极大地提升系统安装效率。</p>
+]]></content>
+      <categories>
+        <category>瞎折腾</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+        <tag>运维</tag>
+        <tag>Linux</tag>
+        <tag>CentOS</tag>
+        <tag>懒人</tag>
       </tags>
   </entry>
   <entry>
@@ -1045,29 +892,158 @@
       </tags>
   </entry>
   <entry>
-    <title>ESXi6.7一些罕见问题的解决方法</title>
-    <url>/2020/04/27/ESXi%E4%B8%80%E4%BA%9B%E7%BD%95%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>一大早睡得正香，突然被一通电话叫醒了（内心<del>万马奔腾</del>一万个不情愿）。“…昨晚停了一次电，服务器全都连不上了，网络有问题，过来帮忙看一下”。点开微信群一看，瞬间不淡定了：“工程师反映，系统远程不了了，网站也打不开”，“停电了，昨晚半夜供电局高压跳闸，我们的电池没能坚持下去”。这不意味着整个机房瞬间失去电力供应了？！</p>
-<p>我连滚带爬坐到了电脑椅上，打开电脑，还能连接到机房VPN，说明出口网络还是通的。几经排查，原来是因为刀片服务器的交换机忘记保存配置，断电重启后部分配置失效了（一记耳光）。</p>
-<h1 id="第一个问题：VCSA无法访问"><a href="#第一个问题：VCSA无法访问" class="headerlink" title="第一个问题：VCSA无法访问"></a>第一个问题：VCSA无法访问</h1><h2 id="异常表现"><a href="#异常表现" class="headerlink" title="异常表现"></a>异常表现</h2><p>排查过程中发现，VCSA访问不了了，提示<strong>503 Service Unavailable(Failed to connect to endpoint…）</strong>。</p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>第一反应告诉我，可能是VCSA的核心服务没能启动。按照网上大神的说法，需要SSH登录到VCSA，用命令行来启动核心服务。但是问题来了，这VCSA默认没打开SSH服务啊，还能怎么搞？<br>其实VCSA还有个设备管理功能（用于进行VCSA底层组件管理），可以通过浏览器访问<code>https://&lt;VCSA IP&gt;:5480：</code>进入：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-20-11.png" alt="2020-04-29-23-20-11"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-23-46.png" alt="2020-04-29-23-23-46"></p>
-<p>果不其然，VCSA的好几个核心服务都没有启动。按照下图说明来启动相关服务，然后看看VCSA是不是能访问了？：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-30-14.png" alt="2020-04-29-23-30-14"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-32-31.png" alt="2020-04-29-23-32-31"></p>
-<h1 id="第二个问题：无法操作虚拟机"><a href="#第二个问题：无法操作虚拟机" class="headerlink" title="第二个问题：无法操作虚拟机"></a>第二个问题：无法操作虚拟机</h1><h2 id="异常表现-1"><a href="#异常表现-1" class="headerlink" title="异常表现"></a>异常表现</h2><p>一切尽在不言中：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-35-50.png" alt="2020-04-29-23-35-50"></p>
-<p>还有无脑弹出的消息：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-29-23-37-05.png" alt="2020-04-29-23-37-05"></p>
-<h2 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法"></a>解决方法</h2><p>同第一个问题一样，也是因VCSA服务异常造成的。把相关服务启动或者重新启动一遍就可以了。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>通常遇到以上问题时，重点关注这个几个服务的状态，如果处于异常或停止状态，只需把对应服务启动或重启就OK了：</p>
-<ul>
-<li>VMware vService Manager</li>
-<li>VMware vSphere Update Manager</li>
-<li>VMware PSC Health</li>
-<li>VMware vSphere Client</li>
-<li>VMware vSphere Web Client</li>
-<li>VMware vCenter Server</li>
-<li>VMware vCenter-Services</li>
+    <title>华三服务器·UIS RAID2000 M2（PM8060）阵列卡基本配置</title>
+    <url>/2020/07/01/%E5%8D%8E%E4%B8%89%E6%9C%8D%E5%8A%A1%E5%99%A8%C2%B7UIS%20RAID2000%20M2%EF%BC%88PM8060%EF%BC%89%E9%98%B5%E5%88%97%E5%8D%A1%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p><strong>磁盘阵列</strong>（Redundant Arrays of Independent Disks，RAID）是如今大多数服务器的一个基本组成部分，它是由多块独立磁盘组合而成的磁盘组，用于提升整个磁盘系统效能，以及数据的安全性。</p>
+</blockquote>
+<p>目前实现阵列有两种形式，分为软阵列和硬阵列。软阵列需要通过软件来实现阵列功能，如Windows的RAID5卷、Linux的mdadm工具等。而硬阵列则需要通过硬件来实现，如阵列卡。本文以华三服务器为例的UIS RAID2000 M2（PM8060）阵列卡为例，介绍如何配置一个简单的磁盘阵列。</p>
+<h1 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h1><h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><ol>
+<li>服务器：H3C R4900 G2</li>
+<li>服务器包含一块UIS RAID2000 M2（PM8060）阵列卡，和3个600GB的SAS磁盘</li>
+<li>服务器已启用HDM（华三服务器的BMC）</li>
+<li>一台电脑，用于远程操作<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2>使用电脑登录到服务器的BMC，点击远程控制台，下载控制台程序并运行（需要安装JRE）：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-10-03.png" alt="2020-07-01-18-10-03"><br>点击控制台左上角的电源，点击开机。如果服务器处于开机状态，则点击重启。等待系统自检通过后（大概需要一分钟），按屏幕提示，按下Esc键或Del键进入BIOS。如下图操作：</li>
+</ol>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-33-03.png" alt="2020-07-01-18-33-03"></p>
+<p>选中高级→PMC maxView Storage Manager，一路回车，进入RAID配置界面：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-13-10.png" alt="2020-07-01-18-13-10"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-16-04.png" alt="2020-07-01-18-16-04"></p>
+<p>选中Logical Device Configuration→Create Array，创建一个新的逻辑磁盘组。这里以创建一个RAID1阵列为例：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-19-18.png" alt="2020-07-01-18-19-18"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-19-43.png" alt="2020-07-01-18-19-43"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-21-13.png" alt="2020-07-01-18-21-13"><br>ps：由于是实验，这里使用Quick Init（快速部署）即可。</p>
+<p>查看配置结果：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-01-18-46-38.png" alt="2020-07-01-18-46-38"></p>
+]]></content>
+      <categories>
+        <category>搬砖随记</category>
+      </categories>
+      <tags>
+        <tag>RAID</tag>
+        <tag>磁盘</tag>
+        <tag>BIOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>域名变更</title>
+    <url>/2021/07/08/%E5%9F%9F%E5%90%8D%E5%8F%98%E6%9B%B4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="没错，域名又双叕换了！"><a href="#没错，域名又双叕换了！" class="headerlink" title="没错，域名又双叕换了！"></a>没错，域名又双叕换了！</h1><p>本blog正式用上新域名辣~</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://tokiame.cn</span><br></pre></td></tr></table></figure>
+<h1 id="契机"><a href="#契机" class="headerlink" title="契机"></a>契机</h1><p>自从博客名改名时雨小栈以后，思来想去总感觉不对劲啊，unlinus.cn这域名和标题不符！于是就有了换域名的想法。</p>
+<p>光是域名就想了大半天，后来决定使用“时雨”二字的日语罗马音——tokiame作为域名。上万网找了下，发现tokiame.com已经被人注册过了。虽说不打算将.com作为自己的一级域名，但是总感觉二级域tokiame和别人重名了，不爽（就是这么任性）。于是，我在tokiame后面加上了自己英文名的前三位asu，再综合自己的钱包情况（穷），注册了tokiame-asu.top（首年7块钱）。为什么一级域名是.top呢？因为真的不想被人whois查到我的信息（cn域名在阿里云那边搞不了whois隐藏，不知道是不是我的问题）</p>
+<p>今年年初开始，我的博客一直托管在Github Page上，通过阿里云的CDN和OSS图床给博客加速，效果很不错。然而现在想换域名，问题来了，国内CDN都需要域名备案，而我已经接近大半年没用过阿里云的ECS了。因为备案域名需要绑定ECS、云存储网关之类的产品，或者绑定备案授权码（国内云服务商大多数都是这么操作）。直接跑去买ECS或者云产品来备案也不现实，因为云产品需要购买满三个月以上才能进行备案，三个月产生的费用对我来说未免太过昂贵。没办法，只能暂时放弃备案这个想法了。后来我找到一个伙计，白嫖了一台美国主机，把博客放在了上面。因为是国外主机，域名可以直接解析到国外主机的IP而不需要备案。blog.tokiame-asu.top就这样暂时在别处安家了。</p>
+<p>更换域名后，我立马在友链主页上更新了自己的博客信息，并给友链上的伙伴发了更换域名申请。虽说网站域名换好了，但是网站的图床仍在使用unlinus.cn域名。思考片刻，还是决定搞个备案。因为阿里云的产品最近没什么优惠（我也不是新用户了），实在砸不了钱，而且tokiame-asu.top这域名，在阿里云注册未满60天又不能转出，在阿里云备案是行不通了。于是转战腾讯云，找到了云+校园（n年前买过云+校园，但是买了3次，每次都没及时续费，资格已经无了o(╥﹏╥)o）。新版套餐是25岁以下免学生认证，三个月27块钱，一年也才108，果断买（然后就只买了3个月，我是不是傻子）。</p>
+<p><img src="https://buff.tokiame.cn/hexo-images/202109082136194.png" alt="image-20210908213653119"></p>
+<p>云主机有了，但是域名还在阿里云，还要等一个多月才能转出域名（心急呗，老毛病了）。于是又买买买，注册了tokiame.cn域名（这次连-asu都不要了，重名就重名，大不了来跟我抢注tokiame二级域名呗，诶就是玩~）。为什么一级域名又换.cn呢？因为看上了腾讯云的隐私保护，可以隐藏Whois。</p>
+<p>像以往一样，我提交了备案申请，看起来一切顺利。隔天，腾讯云打电话过来，要求之前备案的域名需要能访问，或者完全注销，才能提交新备案。然后我选了后者，一顿骚操作把unlinus.cn的备案给扬了（注销了网站，但没注销网站主体）。在工信部备案系统还能查到我的域名备案号，但是因为空壳主体的原因，需要提交主体注销申请或等工信部备案系统把我的主体信息删掉，才能进行新备案。又查了下网站主体注销申请的流程，要打印、填表、还要邮寄到省管局……我直接好家伙……</p>
+<p>过了一天多，我在工信部备案系统又查了下原域名的备案号，发现已经查无此人（这么快，这不比申请注销主体更得劲么……）</p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2021-09-08-21-33-52.png" alt="2021-09-08-21-33-52"></p>
+<h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>今天工信部发消息告知，备案申请申请已经通过，接下来又是漫长的迁移过程（幸亏已经提前准备好迁移了）……</p>
+<p>这篇文章也算是个踩坑记录吧，希望能帮到大家。</p>
+<p>最后给大伙道个歉！换了好多次域名，网站还挂了好一段时间，I’m so sorry ~</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>定制属于你的ESXi——为ESXi6.7添加驱动</title>
+    <url>/2020/07/04/%E5%AE%9A%E5%88%B6%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84ESXi%E2%80%94%E2%80%94%E4%B8%BAESXi6.7%E6%B7%BB%E5%8A%A0%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>ESXi是目前企业采用的主流虚拟化方案之一，同时也深受广大极客和发烧友的钟爱。ESXi能够兼容大部分的服务器设备，无需额外安装驱动即可安装运行。但是，某些厂商设备采用了第三方或者自有的配件，而原生ESXi往往没有这些配件的驱动程序，这就会导致ESXi无法识别硬件、安装失败。</p>
+<p>早期版本的ESXi（6.5以及更早版本）是可以通过ESXi Customizer来添加第三方驱动程序的，而ESXi6.7已经不再支持用旧版的ESXi Customizer来添加驱动了。So，笔者参照了一下这位大神<a href="https://www.vediotalk.com/archives/2356">Vedio Talk</a>的做法，给大家介绍如何为6.7和更高版本的ESXi添加第三方驱动程序。</p>
+<h1 id="进入主题"><a href="#进入主题" class="headerlink" title="进入主题"></a>进入主题</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p><strong>本文使用到的软件如下：</strong></p>
+<ol>
+<li>ESXi 6.7 u3b离线安装包</li>
+<li>ESXi Customizer PS→<a href="http://vibsdepot.v-front.de/tools/ESXi-Customizer-PS-v2.6.0.ps1">点击此处下载</a></li>
+<li>PowerShell（Windows 10自带的命令行环境）</li>
+<li>硬件的ESXi驱动（本文以H3C服务器的阵列卡驱动为例）</li>
+</ol>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="安装Vmware-PowerCLI模块"><a href="#安装Vmware-PowerCLI模块" class="headerlink" title="安装Vmware PowerCLI模块"></a>安装Vmware PowerCLI模块</h3><p>打开Windows PowerShell，输入<code>Install-Module -Name VMware.PowerCLI</code>,在线安装VMware命令行模块（由于是从国外代码库进行下载，此处请自备一杯酸酸乳，不然半年都下不完…）：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-13-25-37.png" alt="2020-07-04-13-25-37"><br>ps：输入A全部选是</p>
+<p>输入<code>set-ExecutionPolicy Bypass</code>，调整PowerShell执行策略，允许运行脚本：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-13-26-02.png" alt="2020-07-04-13-26-02"></p>
+<h3 id="为ESXi添加驱动"><a href="#为ESXi添加驱动" class="headerlink" title="为ESXi添加驱动"></a>为ESXi添加驱动</h3><p><a href="http://vibsdepot.v-front.de/tools/">下载ESXi Customizer PS</a>。将ESXi离线包、驱动程序、ESXi Customizer放到同一个目录，方便操作：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-14-37-10.png" alt="2020-07-04-14-37-10"></p>
+<p>在该目录下，按住Shift键+鼠标右键，在该目录下打开PowerShell：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-14-38-31.png" alt="2020-07-04-14-38-31"></p>
+<p>使用命令，为ESXi包添加驱动。命令格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.\ESXi-Customizer-PS-v2.6.0.ps1 -izip &lt;ESXi离线包路径&gt; -pkgDir &lt;驱动文件路径&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-13-30-33.png" alt="2020-07-04-13-30-33"></p>
+<p>命令执行完成以后，会在相同目录下生成一个包含驱动的ISO镜像文件。这时我们就可以用这个ISO镜像来安装ESXi了：<br><img src="https://buff.tokiame.cn/hexo-images/2020-07-04-16-00-08.png" alt="2020-07-04-16-00-08"></p>
+<h2 id="另请参阅…"><a href="#另请参阅…" class="headerlink" title="另请参阅…"></a>另请参阅…</h2><ul>
+<li>ESXi驱动包下载：<a href="https://vibsdepot.v-front.de/wiki/index.php/List_of_currently_available_ESXi_packages">https://vibsdepot.v-front.de/wiki/index.php/List_of_currently_available_ESXi_packages</a></li>
+<li>VMware官方网站：<a href="https://www.vmware.com/">https://www.vmware.com/</a></li>
 </ul>
-<p>数据无价，双手合十，祈祷永不宕机，永不断电。</p>
+]]></content>
+      <categories>
+        <category>搬砖随记</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+        <tag>vSphere</tag>
+        <tag>运维</tag>
+        <tag>驱动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>年度水文：解决了访问博客出现的403问题</title>
+    <url>/2022/07/02/%E5%B9%B4%E5%BA%A6%E6%B0%B4%E6%96%87%EF%BC%9A%E8%A7%A3%E5%86%B3%E4%BA%86%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2%E5%87%BA%E7%8E%B0%E7%9A%84403%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote>
+<p>Long time no see<br>伙计们，我回来了</p>
+</blockquote>
+<h1 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h1><p>去年Coding Pages下线后，我把博客托管在了云开发CloudBase上（有一说一，还挺方便的，连CDN配置都省了）。</p>
+<p>部署完成后，发现部分博客文章打不开了，报403错误：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-17-41-03.png" alt="2022-07-02-17-41-03"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-17-42-20.png" alt="2022-07-02-17-42-20"></p>
+<p>然鹅很奇怪的是，早前博客部署在Github Pages、Coding Pages的时候，是没有这个问题的。在本地测试，也能正常打开：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-17-48-36.png" alt="2022-07-02-17-48-36"></p>
+<h1 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h1><p>只能怀疑是环境的问题了，毕竟在本地都能正常打开。</p>
+<ol>
+<li>检查问题文章中的图片链接，复制到浏览器后能正常打开，排除了图床的访问权限问题</li>
+<li>将问题文章和其他正常文章对比后发现，问题文章的源文件名、文章标题中都包含有“+”符号，会不会是这个造成的呢？</li>
+</ol>
+<p>先从源文件名下手，将源文件重命名了一下，把“+”替换为“、”：</p>
+<ul>
+<li><p>更改前：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-18-00-20.png" alt="2022-07-02-18-00-20"></p>
+</li>
+<li><p>更改后：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-18-01-33.png" alt="2022-07-02-18-01-33"></p>
+</li>
+</ul>
+<p>随后将博客部署到CloudBase，小等1分钟后刷新，再次访问这篇文章，发现可以正常访问了：<br><img src="https://buff.tokiame.cn/hexo-images/2022-07-02-18-09-12.png" alt="2022-07-02-18-09-12"></p>
+<p>另一篇文章也采用相同方法进行操作。最后，问题全部解决。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>拯救这场灾难——如何解决因误操作导致的VCSA连接丢失</title>
+    <url>/2020/05/30/%E6%8B%AF%E6%95%91%E8%BF%99%E5%9C%BA%E7%81%BE%E9%9A%BE%E2%80%94%E2%80%94%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E5%9B%A0%E8%AF%AF%E6%93%8D%E4%BD%9C%E5%AF%BC%E8%87%B4%E7%9A%84VCSA%E8%BF%9E%E6%8E%A5%E4%B8%A2%E5%A4%B1/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="开始唠嗑…"><a href="#开始唠嗑…" class="headerlink" title="开始唠嗑…"></a>开始唠嗑…</h1><h2 id="因强迫症埋下祸根…"><a href="#因强迫症埋下祸根…" class="headerlink" title="因强迫症埋下祸根…"></a>因强迫症埋下祸根…</h2><p>昨天给部门的vSphere集群配置了分布式交换机（Distribute Switch），把所有虚拟机迁移到分布式端口组上了。好不容易把所有ESXi标准交换机（以下称vswitch0）的端口组删干净了，猛然发现：咋还有残留的端口组捏？！<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-43-51.png" alt="2020-05-30-17-43-51"><br>明明没有关联虚拟机，删又删不掉，看着又碍眼，干脆另起一个数据数据中心和群集，然后把所有ESXi节点重新转移过去！</p>
+<p>然而事实证明这个决定是错误的。当我想把其中一个ESXi节点迁移到新的数据中心和集群时，频繁出现“不支持此操作”“端口20正在使用中”之类的提示。这时才想起，ESXi节点上都运行着Distribute Switch，而且虚拟机都占用着Distribute Switch上的分布式端口组：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-44-59.png" alt="2020-05-30-17-44-59"><br>重新在vswitch0上创建标准端口组，然后把虚拟机迁移到vswitch0标准端口组，一场灾难从此拉开序幕…</p>
+<h2 id="灾难伊始"><a href="#灾难伊始" class="headerlink" title="灾难伊始"></a>灾难伊始</h2><p>一番操作以后，发现VCSA跟所有ESXi节点失去连接了。突然才想起，vswitch0的上行链路不是分配给Distribute Switch了吗？也就是说，此时新建的标准端口组根本就没有上行链路，而VCSA虚拟机恰好在这个ESXi节点上运行……<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-05-11.png" alt="2020-05-30-16-05-11"></p>
+<h1 id="拯救任务开始"><a href="#拯救任务开始" class="headerlink" title="拯救任务开始"></a>拯救任务开始</h1><h2 id="A计划：急速还原"><a href="#A计划：急速还原" class="headerlink" title="A计划：急速还原"></a>A计划：急速还原</h2><p>我还是太年轻了。<br>兴冲冲地登录了ESXi节点，找到VCSA虚拟机，然后编辑设置，把网络调回Distribute Switch的对应端口组，然后发现事情并不简单：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-11-05.png" alt="2020-05-30-16-11-05"><br>好吧，A计划宣告失败。</p>
+<div class="note danger flat"><p><strong>Tips：</strong><br>分布式交换机及其下属端口组只能由VCSA、vCenter进行配置！</p>
+</div>
+
+<h2 id="B计划：将计就计"><a href="#B计划：将计就计" class="headerlink" title="B计划：将计就计"></a>B计划：将计就计</h2><p>如果两台虚拟机处于同一个端口组、同一个网段，这两台虚拟机不久可以互访了吗？<br>So，我把ESXi上的一台空闲虚拟机网络适配器分配到和VCSA相同的标准端口组，配好IP，在虚拟机里面打开浏览器，输入VCSA的IP地址：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-18-39.png" alt="2020-05-30-16-18-39"></p>
+<p>emm…再访问底层管理页面（https:&#x2F;&#x2F;&lt;VCSA的IP地址&gt;:5480）看看：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-42-34.png" alt="2020-05-30-17-42-34"></p>
+<p>我很好，只是有点小自闭而已~<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-21-06.png" alt="2020-05-30-16-21-06"></p>
+<h2 id="C计划：重启大法"><a href="#C计划：重启大法" class="headerlink" title="C计划：重启大法"></a>C计划：重启大法</h2><p>软的不行，就来硬的！<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-26-28.png" alt="2020-05-30-16-26-28"><br>经过漫长的等待（大约过了三四分钟的亚子&#x3D; &#x3D;），终于重启完了。考虑到VCSA刚启动不久，可能有一些服务有警告或者根本没启动（汲取上一次事件的经验：戳这儿），于是我先登录到底层管理页面（https:&#x2F;&#x2F;&lt;VCSA的IP地址&gt;:5480）查看VCSA各方面的状态。无奈，还是老样子，登不进去…</p>
+<p>So，C计划宣布破产。<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-34-21.png" alt="2020-05-30-16-34-21"></p>
+<h2 id="D计划：另辟蹊径"><a href="#D计划：另辟蹊径" class="headerlink" title="D计划：另辟蹊径"></a>D计划：另辟蹊径</h2><p>我认为VCSA还是得设法连接到外网。<br>突然想起服务器有4个网口，2个被Distribute Switch占用了，剩下两个网口分别连接到两台IPSAN存储，并且有各自的虚拟交换机（vswitch1和vswitch2），其中第4个网口目前没在使用。那我把网口对端的交换机端口调到外网，在vswitch2上新建一个端口组分配给VCSA虚拟机网络适配器，不就可以实现外网访问了吗？</p>
+<ul>
+<li><p>配置对应的交换机端口为Trunk模式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[*CX110-Slot-2X]interface GE 3/1/2</span><br><span class="line">[*CX110-Slot-2X-GE3/1/2]port link-type trunk</span><br><span class="line">[*CX110-Slot-2X-GE3/1/2]port trunk allow-pass vlan all    /*临时配置，日常使用不建议允许所有VLAN通过*/</span><br><span class="line">[*CX110-Slot-2X-GE3/1/2]quit</span><br><span class="line">[*CX110-Slot-2X]commit</span><br><span class="line">[~CX110-Slot-2X]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在vswitch2上新建一个端口组:<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-57-02.png" alt="2020-05-30-16-57-02"></p>
+</li>
+<li><p>将VCSA的网络划分到该端口组：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-16-58-03.png" alt="2020-05-30-16-58-03"></p>
+</li>
+</ul>
+<p>经过以上的轮番骚操作以后，我终于可以放弃跑路的念头了：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-01-47.png" alt="2020-05-30-17-01-47"></p>
+<p>将VCSA虚拟机的网络适配器分配到分布式端口组：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-32-08.png" alt="2020-05-30-17-32-08"></p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><h2 id="教训"><a href="#教训" class="headerlink" title="教训"></a>教训</h2><p>这其实算得上是一次失败的网络割接了。割接前一定要做好万全的准备，包括各种任务计划、风险评估、应急预案等等，而不是说要等到割接过程中出现问题了，才去现场发挥，手忙脚乱，不知所措。</p>
+<h2 id="科普"><a href="#科普" class="headerlink" title="科普"></a>科普</h2><p>vSphere标准交换机和分布式交换机的区别：</p>
+<ul>
+<li><p>标准交换机：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-36-14.png" alt="2020-05-30-17-36-14"></p>
+</li>
+<li><p>分布式交换机：<br><img src="https://buff.tokiame.cn/hexo-images/2020-05-30-17-36-30.png" alt="2020-05-30-17-36-30"></p>
+</li>
+</ul>
+<p>参考链接：<a href="https://blog.51cto.com/13556019/2062018">https://blog.51cto.com/13556019/2062018</a></p>
 ]]></content>
       <categories>
         <category>搬砖随记</category>
@@ -1077,80 +1053,104 @@
         <tag>vSphere</tag>
         <tag>故障</tag>
         <tag>运维</tag>
+        <tag>踩坑</tag>
       </tags>
   </entry>
   <entry>
-    <title>ESXi升级方法 - 从5.5到6.0</title>
-    <url>/2020/04/26/ESXi%E4%BB%8E5.5%E5%88%B06.0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上个月给数据中心的vSphere平台做了一次升级，期间遇到各种各样的坑，还好后期都完美解决了，不然真得跑路了（都是自找的&#x3D; &#x3D;）。现在我来把当时的整个操作流程整理一下。</p>
-<h1 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h1><p>先简单介绍一下这套vSphere平台的配置。平台共包含10个计算节点，均已组成集群并配置了HA，集群使用IPSAN共享存储，每个计算节点正在运行的ESXi版本是5.1。现在的任务是将每个节点的ESXi版本都升级到5.5。</p>
-<p>那么问题来了，怎样才能保证ESXi能够平滑升级的同时，又不影响到平台上的虚拟机呢？这时，我们可以利用集群的特性，将需要升级的节点上的虚拟机热迁移到其他节点（热迁移需要配置vMotion），然后将这个节点切换到维护模式，再进行升级。这样既能完成升级，又能保证业务不中断，岂不美哉！</p>
-<h1 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h1><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>前面balabala了一堆废话，是时候开始实操了！我们先准备好一些东西：</p>
+    <title>更高的运维格调：Grafana对接Zabbix</title>
+    <url>/2020/06/06/%E6%9B%B4%E9%AB%98%E7%9A%84%E8%BF%90%E7%BB%B4%E6%A0%BC%E8%B0%83%EF%BC%9AGrafana%E5%AF%B9%E6%8E%A5Zabbix/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="Grafana——开源、高逼格可视化监控平台！"><a href="#Grafana——开源、高逼格可视化监控平台！" class="headerlink" title="Grafana——开源、高逼格可视化监控平台！"></a>Grafana——开源、高逼格可视化监控平台！</h2><p>搞过运维的应该都听说过Grafana吧！以下这张图就是Grafana的：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-11-49-01.png" alt="2020-06-06-11-49-01"></p>
+<h2 id="再来看看Zabbix"><a href="#再来看看Zabbix" class="headerlink" title="再来看看Zabbix"></a>再来看看Zabbix</h2><p>有人可能问了，Zabbix不是有自带图表吗，为啥还需要Grafana？其实怎么说呢，Zabbix还是偏后端的监控系统，主要面向运维人员。而且，Zabbix图表类型不够丰富，对于一般人来说不太友好。So，我们可以将Grafana与Zabbix对接，作为Zabbix的Dashboard（仪表板），接收来自Zabbix的数据，并通过各种形式的图表展示出来。</p>
+<p>废话不多说，开始我的表演。</p>
+<h1 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h1><h2 id="Grafana安装部署"><a href="#Grafana安装部署" class="headerlink" title="Grafana安装部署"></a>Grafana安装部署</h2><div class="note info flat"><p><strong>注意：</strong></p>
 <ol>
-<li>超级终端软件（如PuTTY、SecureCRT、XShell、MobaXTerm等，Win10 CMD自带的SSH功能也是可以的）；</li>
-<li>ESXi 5.5升级包（可从VMware官网或其他途径获取）</li>
-<li>VMware vSphere Client（vSphere客户端）</li>
+<li>本文使用的Linux发行版是CentOS 8.1.1911;</li>
+<li>本文使用的Zabbix版本为5.0.1;</li>
+<li>本文使用的Grafana版本为7.0.3;</li>
 </ol>
-<h2 id="通过vSphere-Client进行操作"><a href="#通过vSphere-Client进行操作" class="headerlink" title="通过vSphere Client进行操作"></a>通过vSphere Client进行操作</h2><p>使用vSphere Client登录到ESXi节点，将节点切换到维护模式：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-00-29.png" alt="2020-04-26-18-00-29"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-04-01.png" alt="2020-04-26-18-04-01"></p>
-<p>将ESXi升级包上传到数据存储，并记下数据存储路径，后续升级操作要用到。例如我这里将升级包上传到了本地存储，那么我现在得记下本地存储的路径：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-20-10.png" alt="2020-04-26-18-20-10"></p>
-<h2 id="通过SSH登录到ESXi节点"><a href="#通过SSH登录到ESXi节点" class="headerlink" title="通过SSH登录到ESXi节点"></a>通过SSH登录到ESXi节点</h2><p>打开该节点的配置→安全配置文件，启动SSH服务：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-05-41.png" alt="2020-04-26-18-05-41"></p>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-06-45.png" alt="2020-04-26-18-06-45"></p>
-<p>打开超级终端软件（笔者用的是XShell），使用ESXi的账号密码，用SSH登录到ESXi节点：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-09-19.png" alt="2020-04-26-18-09-19"></p>
-<h2 id="使用命令对ESXi进行平滑升级"><a href="#使用命令对ESXi进行平滑升级" class="headerlink" title="使用命令对ESXi进行平滑升级"></a>使用命令对ESXi进行平滑升级</h2><p>使用这条命令列出ESXi升级包的版本：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">esxcli software sources profile list -d &lt;ESXi升级包所在的数据存储的路径&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-18-15-43.png" alt="2020-04-26-18-15-43"><br>（注：数据存储路径见本文3.2）</p>
-<p>然后使用这条命令，通过升级包进行升级</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">esxcli software profile update -d &lt;ESXi升级包所在的数据存储的路径&gt; -p &lt;ESXi升级包版本&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-19-32-24.png" alt="2020-04-26-19-32-24"><br>稍等片刻会出现升级结果。升级成功后，要求重新启动，这时输入reboot命令，将该节点重启即可。</p>
-<h2 id="后续操作"><a href="#后续操作" class="headerlink" title="后续操作"></a>后续操作</h2><p>重启完成后，再次用vSphere Client登录到ESXi，看看ESXi的版本是不是升级到5.5了？<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-19-40-10.png" alt="2020-04-26-19-40-10"></p>
-<p>确认升级成功后，将ESXi节点退出维护模式：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-19-44-17.png" alt="2020-04-26-19-44-17"></p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>以上就是ESXi的平滑升级流程。当然，在生产环境下，系统升级前必须拟定相应的方案（例如升级流程、应急预案等），并对原系统进行测试、数据备份，升级过程中必须严格遵循操作规程，升级后还需要保留一定时长的观察期，当这一系列流程都顺利完成后，才能正式交付使用。</p>
+</div>
+<p>首先，通过dnf安装Grafana：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dnf install https://dl.grafana.com/oss/release/grafana-7.0.3-1.x86_64.rpm -y</span><br></pre></td></tr></table></figure>
+
+<p>启动Grafana，并设置为开机自启：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">systemctl enable --now grafana-server</span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器，通过<code>http://&lt;Host IP&gt;:3000</code>访问Grafana。Grafana的默认用户名和密码都是admin。初次登录的话，需要修改默认的管理员密码：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-12-27-06.png" alt="2020-06-06-12-27-06"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-12-28-29.png" alt="2020-06-06-12-28-29"></p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-12-28-51.png" alt="2020-06-06-12-28-51"></p>
+<h2 id="开始对接Zabbix"><a href="#开始对接Zabbix" class="headerlink" title="开始对接Zabbix"></a>开始对接Zabbix</h2><p>Grafana的插件种类比较丰富，通过Grafana-CLI就能安装各种类型的插件，安装过程比较简单。下面来安装Zabbix插件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">grafana-cli plugins install alexanderzobnin-zabbix-app </span><br></pre></td></tr></table></figure>
+<p>使用<code>systemctl restart grafana-server</code>重新启动Grafana服务。登录Grafana，点击右侧栏设置图标→插件，启用Zabbix插件：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-07-10-43-26.png" alt="2020-06-07-10-43-26"><br><img src="https://buff.tokiame.cn/hexo-images/2020-06-07-10-44-11.png" alt="2020-06-07-10-44-11"></p>
+<p>回到首页，添加数据源：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-06-09.png" alt="2020-06-06-15-06-09"></p>
+<p>选择刚刚安装的Zabbix插件，进行配置：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-06-53.png" alt="2020-06-06-15-06-53"></p>
+<p>配置数据源名称、Zabbix的API URL、Zabbix用户名和密码，随后点击Save&amp;Test保存配置并进行对接测试：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-18-23.png" alt="2020-06-06-15-18-23"></p>
+<p>对接成功：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-30-35.png" alt="2020-06-06-15-30-35"></p>
+<div class="note danger flat"><p><strong>踩坑：</strong><br>如果Zabbix的版本是5.x以前的，则API URL应该写成这种形式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://&lt;Zabbix IP&gt;/zabbix/api_jsonrpc.php</span><br></pre></td></tr></table></figure></div>
+
+<div class="note warning flat"><p><strong>注意：</strong><br>如果你的Zabbix采用Nginx作为Server，则API URL内的地址需与Nginx配置文件中的server_name一致，否则会造成对接失败：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-29-12.png" alt="2020-06-06-15-29-12"></p>
+</div>
+
+<h2 id="创建仪表板并使用Zabbix数据源"><a href="#创建仪表板并使用Zabbix数据源" class="headerlink" title="创建仪表板并使用Zabbix数据源"></a>创建仪表板并使用Zabbix数据源</h2><p>回到Grafana首页，创建一个仪表板：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-40-43.png" alt="2020-06-06-15-40-43"></p>
+<p>为仪表板添加一个面板：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-41-46.png" alt="2020-06-06-15-41-46"></p>
+<p>设置图表的各项参数，比如数据源、图表类型、图表数据等，设置比较简单且多样化，根据自己需要进行设置就好了：<br>（我的Zabbix已经事先添加了监控主机，所以这里可以直接获取到数据）<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-45-40.png" alt="2020-06-06-15-45-40"></p>
+<p>点击Apply应用设置，就能看到新建的面板了。点击仪表板右上角的保存图标，保存仪表板：<br><img src="https://buff.tokiame.cn/hexo-images/2020-06-06-15-55-15.png" alt="2020-06-06-15-55-15"></p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>利用Grafana，可以做出各种漂亮的面板、图表，方便我们对数据的解读（最重要的还是逼格高啊&#x2F;滑稽）。Grafana的可玩性还是比较高的，还有更多的功能需要我们自己去探索。</p>
+<h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><ol>
+<li>利用Grafana为Zabbix做Dashboard：<a href="https://www.jianshu.com/p/44498cc11a95">https://www.jianshu.com/p/44498cc11a95</a></li>
+<li>提升运维格调？Grafana整合Zabbix：<a href="https://mp.weixin.qq.com/s/6GGxZ1vKw9nLiSdWYqtjug">https://mp.weixin.qq.com/s/6GGxZ1vKw9nLiSdWYqtjug</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>搬砖随记</category>
       </categories>
       <tags>
         <tag>服务器</tag>
-        <tag>vSphere</tag>
-        <tag>虚拟化</tag>
-        <tag>升级</tag>
+        <tag>运维</tag>
+        <tag>Linux</tag>
+        <tag>CentOS</tag>
+        <tag>监控</tag>
+        <tag>高逼格</tag>
       </tags>
   </entry>
   <entry>
-    <title>Hexo折腾手记</title>
-    <url>/2020/04/24/Hexo%E6%8A%98%E8%85%BE%E6%89%8B%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="写在最前面…"><a href="#写在最前面…" class="headerlink" title="写在最前面…"></a>写在最前面…</h1><p>Hexo是基于node.js构建的一套静态博客平台，安装部署过程都比较简单，稍微懂一点点html和Markdown语法就能搞定（这也是笔者由WP转向Hexo的一个初衷…）<br>话不多说，立马开搞！</p>
-<h2 id="步骤记录（笔者用的是Windows）"><a href="#步骤记录（笔者用的是Windows）" class="headerlink" title="步骤记录（笔者用的是Windows）"></a>步骤记录（笔者用的是Windows）</h2><h2 id="开始之前…"><a href="#开始之前…" class="headerlink" title="开始之前…"></a>开始之前…</h2><p>万事开头难（特别是对于我这种对编程一窍不通的菜鸡儿&#x3D; &#x3D;）。要让Hexo跑起来，首先要满足一些条件：</p>
-<ol>
-<li>一台Windows或Linux主机；</li>
-<li>主机内部署好node.js环境；</li>
-<li>安装好Git（用于将hexo项目pull到本地，玩码云或者Gayhub的同志必备）；</li>
-<li>最基本的！必须懂得npm的简单使用！必须得会一点Markdown语法（除非你拿这玩意当记事本来写）；</li>
-<li>准备好编辑器（sublime，atom，vscode，typora等等）。<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2>下载地址：<a href="http://npm.taobao.org/mirrors/git-for-windows/" title="http://npm.taobao.org/mirrors/git-for-windows/">http://npm.taobao.org/mirrors/git-for-windows/</a>。我下的是最新版：<br><img src="https://buff.tokiame.cn/hexo-images/npm.png" alt="20200425192102"></li>
-</ol>
-<p>下载完成后，运行安装（保持默认配置,一直Next即可）。</p>
-<h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>上<a href="https://nodejs.org/en/">node.js官网</a>下载适合自己系统版本的node.js运行环境安装包（建议用IDM、迅雷之类的工具来下载，这样比较快）。下载完成后，运行安装即可（没什么需要的话，保留默认配置安装就可以了）：<br><img src="https://buff.tokiame.cn/hexo-images/2020-04-26-20-34-19.png" alt="2020-04-26-20-34-19"></p>
-<p>安装完成后,执行以下命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">node -v      /*查看当前安装的node.js版本*/</span><br><span class="line">v12.16.1</span><br><span class="line">npm -v      /*查看当前安装的node.js软件包管理器版本*/</span><br><span class="line">v6.13.4</span><br><span class="line">npm config set registry http://registry.npm.taobao.org/   /*更换npm安装源为国内源（这里用淘宝的）*/</span><br><span class="line">npm update      /*刷新npm源*/</span><br></pre></td></tr></table></figure>
-<h2 id="开始部署Hexo"><a href="#开始部署Hexo" class="headerlink" title="开始部署Hexo"></a>开始部署Hexo</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g      /*使用npm安装Hexo*/</span><br><span class="line">cd /d D:\Project\hexo        /*进入你要部署Hexo的目标文件夹*/</span><br><span class="line">hexo init      /*部署Hexo*/</span><br></pre></td></tr></table></figure>
-<p>Tips：Hexo init时，需要将github上的Hexo项目pull下来，速度会比较慢，除非你有喝酸酸乳（&#x2F;手动滑稽）。初次部署完成后，执行以下命令进行初始化：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean     /*清除缓存*/</span><br><span class="line">hexo g         /*生成静态页面*/</span><br><span class="line">hexo s         /*开始跑Hexo*/</span><br></pre></td></tr></table></figure>
-
-<p>打开浏览器，输入<code>IP地址:4000</code>(本地的话是 <code>localhost:4000</code> 或 <code>127.0.0.1:4000</code>),就可以看到效果了，是不是很简单！<br><img src="https://buff.tokiame.cn/hexo-images/example.png" alt="20200425192452"></p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>如果你没有公网服务器和域名，也可以将你的Hexo丢到Gayhub、码云或者coding之类的代码托管平台上，直接用你的gayhub域名就能访问了！具体步骤可以参考以下链接的内容：</p>
-<ol>
-<li><a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE" title="https://git-scm.com/book/zh/v2/起步-初次运行-Git-前的配置">初次运行Git前的配置</a></li>
-<li><a href="https://www.jianshu.com/p/e70b4ca63115" title="https://www.jianshu.com/p/e70b4ca63115">hexo博客部署到github</a></li>
-</ol>
+    <title>欢迎新成员——红米AX5使用感受</title>
+    <url>/2021/07/07/%E6%AC%A2%E8%BF%8E%E6%96%B0%E6%88%90%E5%91%98%E2%80%94%E2%80%94%E7%BA%A2%E7%B1%B3AX5%E4%BD%BF%E7%94%A8%E6%84%9F%E5%8F%97/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>家里的无线路由器是TP-Link的WDR6500千兆版，2018年初升级电信宽带买的（当时还是小白，在电信营业厅200多买的，巨坑！网上随便100多就能搞到 &#x3D; &#x3D;），到目前为止服役了3年多。最近实在是受不了了，要么信号不稳定，要么隔一堵墙就从5GHz掉到2.4GHz。还有相当麻烦的一点就是，距离WiFi太远时不能切换到2.4GHz，或者离WiFi近时不能自动切换回5Ghz。我也尝试过改变路由器的摆放位置，也设置过定时重启，无果。那么办法只有一个了——买买买！</p>
+<h1 id="采购！"><a href="#采购！" class="headerlink" title="采购！"></a>采购！</h1><p>在买之前，首先考虑一下需求。由于家里宽带是电信的200M下行，百兆接口的产品显然会成为瓶颈，考虑到将来带宽升级的空间，千兆速率肯定是首选。另外一个要考虑的是无线的速率，早些年的Wifi5无线路由器，主流速率多数是2.4GHz 300M+5GHz 867M。其实这个速率放在我家的话，使用设备不多，重度使用的情况相对比较少，其实也基本够用。</p>
+<p>讲真，无线信号的稳定性才是需要考虑的重点。因为对于对于家里的房屋构造来说，普通的路由器显然有点力不从心了：</p>
+<p><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-21-55-49.png" alt="2021-07-07-21-55-49"><br>（内心OS：0.3米厚的墙，大量的柱子，辣鸡路由器，糟糕的摆放位置，简直绝配&#x3D; &#x3D;）</p>
+<p>去B站看了一圈<a href="https://www.bilibili.com/video/BV1aA411v7jL?from=search&seid=8961385878318621997">大米评测</a>，又去科普了一番，考虑家里的WiFi使用情况和我的钱包（哭了），决定搞2台红米AX5，采用Mesh组网。</p>
+<h1 id="开箱！"><a href="#开箱！" class="headerlink" title="开箱！"></a>开箱！</h1><p>一口气买了两台：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-12-48.jpg" alt="2021-07-07-22-12-48"></p>
+<p>包装还是挺不错的：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-13-57.jpg" alt="2021-07-07-22-13-57"></p>
+<p>机身是白色的，顶面只有系统和网络指示灯。路由器上下两面全部镂空，散热简单粗暴。<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-26-56.jpg" alt="2021-07-07-22-26-56"><br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-23-36.png" alt="2021-07-07-22-23-36"></p>
+<p>背面是1个电源插口、4个千兆网口（1个WAN+3个LAN）和1个重置按钮，平平无奇。<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-25-47.jpg" alt="2021-07-07-22-25-47"></p>
+<h1 id="实测！"><a href="#实测！" class="headerlink" title="实测！"></a>实测！</h1><h2 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h2><p>将两台AX5放在一起，将其中一台AX5（右边那台）的WAN口和旧路由器的LAN口连接，进行联网：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-34-00.jpg" alt="2021-07-07-22-34-00"></p>
+<p>稍等片刻以后，用手机连接已经联网的AX5：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-37-52.png" alt="2021-07-07-22-37-52"></p>
+<p>手机打开MiWifi，绑定路由器 进行设置：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-38-17.png" alt="2021-07-07-22-38-17"></p>
+<p>点下一步。因为开头已经将AX5和旧的路由器连接好了，这里设置有限中继模式即可（该模式将路由器的WAN口作为LAN口使用）：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-42-52.png" alt="2021-07-07-22-42-52"></p>
+<p>设置WiFi的SSID，然后重新连接WiFi：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-43-40.png" alt="2021-07-07-22-43-40"></p>
+<h2 id="Mesh组网（无线回程方式）"><a href="#Mesh组网（无线回程方式）" class="headerlink" title="Mesh组网（无线回程方式）"></a>Mesh组网（无线回程方式）</h2><p>在MiWifi中点“设备”→“Mesh网络设备”→“添加”，将另一台AX5作为子Mesh节点加入组网：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-46-14.png" alt="2021-07-07-22-46-14"><br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-47-00.png" alt="2021-07-07-22-47-00"></p>
+<p>扩展Mesh网络大概需要1-2分钟。扩展完成以后，两台AX5将会使用相同的SSID。<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-49-24.png" alt="2021-07-07-22-49-24"></p>
+<p>Mesh组网完成以后，将两台AX5分别放置在客厅和厨房，准备进行测试。</p>
+<h2 id="简单测试"><a href="#简单测试" class="headerlink" title="简单测试"></a>简单测试</h2><p>附上房屋平面图：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-58-13.png" alt="2021-07-07-22-58-13"></p>
+<p>手机端测试软件用的是WiFi魔盒。先来看看2.4Ghz和5Ghz的信道情况：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-55-46.png" alt="2021-07-07-22-55-46"><br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-22-55-59.png" alt="2021-07-07-22-55-59"></p>
+<p>拿着手机在各个房间区域走动，进行简单的漫游测试。其中，在从卧室到厨房走动的过程中，WiFi魔盒并未感知到WiFi漫游，但是从传输速率和延迟的变化，基本可以判定走动过程中确实发生了一次漫游：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-23-06-50.png" alt="2021-07-07-23-06-50"><br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-23-07-42.png" alt="2021-07-07-23-07-42"></p>
+<p>最后在全屋各个区域测试一下网速：<br><img src="https://buff.tokiame.cn/hexo-images/2021-07-07-23-09-25.png" alt="2021-07-07-23-09-25"></p>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>测试结果还是挺不错的，WiFi漫游过程中基本能实现用户无感知。此外，虽然是采用无限回程的Mesh组网方式，但是终端的网速几乎不受影响，而且终端能够全程保持5GHz连接。后来又进行了一次测试，取消厨房的子Mesh节点，意外地发现网速依然能够保持在下行200M上行30M的水平，5GHz信号强度也比较高，估计得益于自带的独立信号放大器。这样看来，一个AX5也足够全屋5GHz覆盖了。从性价比角度来考虑的话，我觉得红米AX5是一个不错的选择。</p>
+<h1 id="番外：Mesh组网和传统WDS无线桥接的区别？"><a href="#番外：Mesh组网和传统WDS无线桥接的区别？" class="headerlink" title="番外：Mesh组网和传统WDS无线桥接的区别？"></a>番外：Mesh组网和传统WDS无线桥接的区别？</h1><p>先说说漫游的概念。“在无线网络覆盖的范围里，用户有可能在移动中。但由于单个AP（无线访问接入点）设备的信号覆盖范围都是有限的，用户在移动过程中，往往会出现从一个AP覆盖范围跨越到另一个AP覆盖范围的情况。为了避免移动用户在不同的AP之间切换时，造成网络通讯中断的情况，这里就用到了无线漫游的技术。——摘自<a href="https://baike.baidu.com/item/%E6%97%A0%E7%BA%BF%E6%BC%AB%E6%B8%B8/981630?fr=aladdin">百度百科</a>”</p>
+<p>传统路由器的WDS无线桥接使用一台或多台无线路由器和主路由进行桥接，对主路由的无线网络进行拓展（即中继），提升无线的覆盖范围。然而，手机、笔记本等无线终端并不能根据自身的无线质量来决定连接哪一个接入点。</p>
+<p>Mesh组网与WDS无线桥接类似，但是它支持802.11 k&#x2F;v&#x2F;r协议。k用于收集终端的网络质量等信息，决定终端是否进行漫游，v用于请求终端进行无线漫游，r用于缩短无线漫游时间。有了802.11k&#x2F;v&#x2F;r，终端就能在不同的接入点之间，切换到网络质量更佳的接入点，而且全程不需要手动操作，提升用户体验。</p>
+<p>举个栗子，假设AB两台路由器采用WDS无线桥接的话，张三手机连上了A路由，但是当张三离A路由越来越远、离B路由越来越近的时候，他的手机仍然连着A路由，但WiFi已经只有1格信号了，手机死活不肯连接B路由。他只能重新打开Wifi，才能连上B路由（就算两台路由器使用相同SSID也无济于事）。而AB两台路由器使用Mesh组网的话，张三手机连上了A路由，当张三离A路由越来越远、离B路由越来越近的时候，通过802.11k&#x2F;v&#x2F;r协议，张三手机将会快速从A路由切换到B路由，无需手动操作。</p>
+<p>为了让平民百姓也能看得懂，这里使用了比较口语化的方式来进行说明，勿抬杠谢谢~</p>
 ]]></content>
       <categories>
-        <category>Hexo</category>
         <category>瞎折腾</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
-        <tag>博客</tag>
+        <tag>路由器</tag>
+        <tag>mesh</tag>
+        <tag>网络</tag>
       </tags>
   </entry>
 </search>
