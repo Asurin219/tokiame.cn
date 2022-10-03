@@ -710,8 +710,8 @@
         <category>瞎折腾</category>
       </categories>
       <tags>
-        <tag>虚拟化</tag>
         <tag>服务器</tag>
+        <tag>虚拟化</tag>
         <tag>桌面云</tag>
         <tag>华为</tag>
       </tags>
@@ -1038,8 +1038,8 @@
         <category>瞎折腾</category>
       </categories>
       <tags>
-        <tag>虚拟化</tag>
         <tag>服务器</tag>
+        <tag>虚拟化</tag>
         <tag>华为</tag>
         <tag>云计算</tag>
       </tags>
@@ -1111,9 +1111,9 @@
         <category>搬砖随记</category>
       </categories>
       <tags>
-        <tag>虚拟化</tag>
         <tag>服务器</tag>
         <tag>vSphere</tag>
+        <tag>虚拟化</tag>
         <tag>升级</tag>
       </tags>
   </entry>
@@ -1145,8 +1145,8 @@
 </ol>
 ]]></content>
       <categories>
-        <category>Hexo</category>
         <category>瞎折腾</category>
+        <category>Hexo</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
